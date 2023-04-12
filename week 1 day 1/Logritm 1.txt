@@ -1,0 +1,5 @@
+Start 
+Read Length, Breadth
+Find the area of rectangle by using the formula area <-- Length*Breadth
+Print area
+Stop
