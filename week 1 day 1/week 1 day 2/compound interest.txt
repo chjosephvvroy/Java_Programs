@@ -1,0 +1,5 @@
+Start 
+read the values principal, intrest rate, time, number of times intrest is compounded into p,r,t,n
+calculate compound intrest using the formula compound intrest <----p(1+r/n)^nt 
+print compound intrest
+stop
