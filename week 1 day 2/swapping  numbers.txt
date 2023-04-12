@@ -1,0 +1,18 @@
+    write an algorithm to swap the values of two quantities
+    number1      number2
+      10             20
+after swapping:
+   number1     number2
+    20           10
+ 
+
+start 
+read the two quanntities number1, number2
+assign the number1value in temp
+temp <----number1
+assign the number2 value to number1
+number1 <----number2
+assign the temp value to number2 
+number2 <----temp
+print the swapped values number1 and number2
+stop
