@@ -1,0 +1,17 @@
+wriite sum of first natural nubeers
+ 
+
+natural numbers --1,2,3,4,5,6,....
+n=6
+sum=1+2+3+4+5+6
+n=100
+sum=1+2+3+4+5+6+...100
+
+formula n*(n+1)/2
+
+
+start 
+read the number n
+find the sum of n natural numbers by the formula sum<--- n*(n+1)/2
+print sum of natural number
+stop

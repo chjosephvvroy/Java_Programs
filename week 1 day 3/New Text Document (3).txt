@@ -1,0 +1,10 @@
+1.start
+2.read the positive integer"number"
+3.initilize reverse number=0
+4.repetedly execute the steps i,ii,iii until (number== 0)
+     
+      i.digit=number%10
+      ii.reverse=reverse*10+digit
+      iii.number=number/10
+5.print reverse number
+6.stop
