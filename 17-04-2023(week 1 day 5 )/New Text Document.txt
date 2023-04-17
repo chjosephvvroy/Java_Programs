@@ -1,0 +1,13 @@
+write an algorithm to find wether an year is a leap year or not
+ 
+
+ start
+ read the year
+ if (year%4==0)
+        print "the given year is a leap year"
+    else
+        if((year%100==0)&& (year%400==0))
+             print "the given year is a leap year"
+        else
+        print "the given year is not a leap year"
+end
