@@ -1,0 +1,206 @@
+write an algorithm to find sum of two numbers
+
+step 1: start 
+step 2: declare number1, number2, sum
+step 3: read the values into number1 and number2 
+step 4: add the two numbers using the formula sum<--number1+number2
+step 5: print sum
+step 6: stop
+
+
+write the algorithm to find average of three numbers
+
+step 1: start
+step 2: declare number1, number2, number3, average
+step 3: read the values into number1, number2, number3
+step 4: add number1, number2, number3 and divide wtih 3 using the formula average<--number1+number2+number3/3
+step 5: print average
+step 6: stop
+
+
+write the algorithm to find area of rectangle
+
+step 1: start
+step 2: declare length, breadth, area 
+step 3: read the values into length and breadth
+step 4: calculate area using the formula area<--length*breadth
+step 5: print area
+step 6: stop
+
+
+
+write the algorithm to find perimeter of rectangle
+
+step 1: start
+step 2: declare length, breadth, perimeter
+step 3: read the values into length and breadth
+step 4: calculate perimeter of rectangle using the formula perimeter<--2(length*breadth)
+step 5: print perimeter
+step 6: stop
+
+
+
+write the algorithm to find area of square 
+
+step 1: start
+step 2: declare side, area
+step 3: read the value into side 
+step 4: calculate area of the square using the formula area<--side*side
+step 5: print area
+step 6: stop
+
+
+
+write the algorithm to find perimeter of square
+
+step 1: start 
+step 2: declare side, perimeter
+step 3: read the values into side 
+step 4: calculate perimeter of square using the formula<--4*side
+step 5: print perimeter
+step 6: stop
+
+
+
+write the algorithm to find simple intrest
+
+step1: start
+step2: declare principle, time, rate of intrest, simple intrest
+step3: read the values into principle, time, rate of intrest, simple intrest
+step 4: calculate simple intrest using the formula<--(principle*rate of intrest*time)/100
+step 5: print simple intrest 
+step 6: stop
+
+Bracket needs to be included in case of calculating average simple interest
+
+
+
+write an algorithm to find marks of 5 students and percentage of students
+
+step 1: start
+step 2: declare student1_marks, student2_marks, student3_marks, student4_marks, student5_marks, average, percentage
+step 3: read the values into student1_marks, student2_marks, student3_marks, student4_marks, student5_marks
+step 4: calculate the average of student1_marks, student2_marks, student3_marks, student4_marks, student5_marks   using the formula<--(student1_marks+student2_marks+student3_marks+student4_marks+student5_marks)/500
+step 5: print "average"
+step 5: calculate percentage of student1_marks, student2_marks, student3_marks, student4_marks, student5_marks
+using the formula<--average*100
+step 6: print "percentage"
+step 7: stop
+
+
+write an algorithm to swap two numbers
+
+number1-20 number2-50
+
+step 1: start 
+step 2: declare number1, number2, temporary number
+step 3: read the values 20 and 50 into number1, number2
+step 4: allocate 20 into temporary number
+step 5: allocate 50 into number1
+step 6: allocate 20 to number2
+step 6: print swapped numbers
+step 7: stop
+
+
+
+write an algorithm to find number is even or not
+
+step 1: start 
+step 2: declare number1, number2
+step 3: read the values into number1 
+step 4: IF
+          the numbers are divisible by 2
+           print number1 as even number
+         
+        Else
+        print number1 is not even number
+step 5: stop   
+
+
+Write an algorithm to find a number is a positive or negative number
+
+step 1: start
+step 2: declare number1
+step 3: read the value into number1
+step 4: if 
+          the number is grater than 0
+          
+          print number is positive number
+          
+          else 
+
+          print the number is negative
+step 5: stop
+
+
+
+Write the algorithm to find biggest of two numbers
+
+
+step 1: start 
+step 2: declare number1 and number2 
+step 3: read the values into number1 and number2
+step 4: if number1>than number2
+step 5: print number1 is greater
+step 6: stop
+
+
+Write the algorithm to find largest of three numbers
+
+
+step1: start
+step2: input the numbers as num1,num2,num3
+step3: if num1 is greater than num2 and num1 is greater than num3
+step4: print num1 is bigger
+step5: if num2 is greater than num3 and num2 is greater than num1
+step6: print num2 is greater
+step7: else
+step8: print num3 is graeter
+step9: stop
+
+
+
+Write an algorithm to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to     following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+
+
+ELSE IF LADDER
+
+step1 :start
+step2 :declare the variables Physics, Chemistry, Biology, Mathematics and Computer,percentage
+step3 :read the values Physics, Chemistry, Biology, Mathematics and Computer
+step4 :percentage marks of five subjects is percentage -->(Physics+Chemistry+Biology+Mathematics+Computer)/500*100
+step6 :if Percentage >= 90% print Grade A
+       else if 
+            Percentage >= 80% print Grade B
+       else if 
+            Percentage >= 70% print Grade C
+       else if 
+            Percentage >= 60% print Grade D
+       else if 
+            Percentage >= 40% print Grade E
+       else if 
+            otherwise print grade F
+step6 :stop  
+
+
+
+write an algorithm for check an alphabet is vowel or consonant
+
+
+step 1: start
+step 2: declare charecters
+step 3: read the values into charecters 
+step 4: if the charecter is equals to a or e or i or o or u
+step 5: print charecter is vowel
+        else
+        print charecter is consonant 
+step 6: stop
+
+
+

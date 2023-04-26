@@ -1,0 +1,193 @@
+write an algorithm to find voter eligibility
+
+step 1: start 
+step 2: declare age, eligible
+step 3: read the values into age
+step 4: if the age is greater than 18
+        print the voter is eligible 
+        else 
+        print voter is eligible
+step 5: stop 
+
+
+
+
+write an algorithm to find admission possibiity based on academic marks
+
+step 1: start
+step 2: declare the marks of aptitude_marks reasoning_marks, candidate_percentage
+step 3: read the academic marks of aptitude_marks, reasoning_marks 
+step 4: calculate the candidate_percentage using the formula<--((aptitude_marks+reasoning_marks)/200)*100
+step 5: if the candidate_percentage is greater than 70%
+             print candidate is eligible for admission
+        else
+             print candidate is not eligible for admission
+
+
+
+write an algorithm to find sum and average of three numbers
+
+step 1: start
+step 2: declare number1, number2, number3, sum, average
+step 3: read the values into number1, number2, number3
+step 4: calculate sum off three numbres using the formula<--number1+number2+number3
+step 5: print sum
+step 6: calculate average of three numbers using the formula<--(number1+number2+number3)/3
+step 7: print average
+step 8: stop
+
+
+
+
+write an algorithm to how to login into facebook
+
+step 1: start
+step 2: declare email, password, mobile number
+step 3: read the email and password 
+step 4: if email and password are verified
+        print login into account
+        else
+        print invalid credentials
+step 5: if invalid the credentials
+        print request OTP for verification through mobile number
+step 6: stop
+
+
+
+write an algorthim for prediction of winnig of cricket match
+ 
+step 1: start
+step 2: declare batch 1, batch2, previous winning scores, batsman1 score, batsman2 score
+step 3: read the values previous winning scores, batsman runs
+step 4: if previous winning score of batch1 is greater than batch2
+        print batch1 can be victorious
+        else 
+        print batch2 can be victorious 
+step 5: if batsman1 score are greater than  
+        print batch1 is can be victorious
+        else
+        print batch2 can be victorious
+step 6: stop
+
+
+write an algorithm to print bitlabs 10 times
+
+step 1: start 
+step 2: declare count
+step 3: assign the count value 1 to count variable
+step 4: print bitlabs
+step 5: incrementing count value by 1 and store the count value into count (count=count+1)
+step 6: repeat step 4 and 5 intil it reaches count valuep is greater than 10
+(count<10)
+step 7: stop
+
+
+
+explanation of my name is sowjanya * 5 times
+
+
+step1:start
+step2:declare count
+step3:assigning the value 1 to count variable (count=1)
+step4:print "myname is sowjanya"
+step5:incrementing count value by 1 and store the value into count (count =count+1)
+step6: check the condition(count<=5) if count value is greater than 5. if it is not repeat step 4 and 5 until it reaches count value is greater than 5 (count<5)
+step7:stop
+ 
+Iteration 1:
+count =1
+print my name is sowjanya
+count=1+1-->2
+2<5 -->
+ 
+Iteration2:
+my name is sowjanya
+count=2+1-->3
+3<5-->
+ 
+Iteration3:
+my name is sowjanya
+count=3+1-->4
+4<5
+ 
+Iteration4:
+my name is sowjanya
+count=4+1=5
+5<=5
+ 
+Iteration 5:
+my name is sowjanya
+count=5+1-->6
+6<5
+ 
+
+
+when count=1 then                when count=0 then
+count<=5                         count<5
+
+
+
+
+
+count=1
+count<=10 
+count<11
+
+count=0
+count<10
+count<=9
+
+
+
+how to write algorithm for printing 1 to 10 numbers in ascending order
+
+output:
+1
+2
+3
+4
+5
+6
+9
+7
+8
+9
+10
+
+
+
+step 1: start
+step 2: delclare a variable count
+step 3: assign value into count
+step 4: print count
+step 5: increment count by one(count=count+1)
+step 6: repeat the steps 4 and 5 until it reaches count values (count<=10) or count value reaches(count<11)
+step 7: stop
+
+
+
+write an algorithm for printing 10 to 1 in descending order
+
+output
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+step 1: start 
+step 2: declare count
+step 3: assign value 10 into count
+step 4: print count=10
+step 5: decrement count by one(count=count-1)
+step 6: repeat the steps 4 and 5 until it reaches 
+count values (count>=1) or (count>0)
+step 7: stop
+
+
