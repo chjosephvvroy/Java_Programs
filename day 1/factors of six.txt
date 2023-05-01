@@ -1,0 +1,10 @@
+factors for 6
+
+step 1: start
+step 2: declare n, i
+step 3: initialize i=1, n=6
+step 4: if n%i==0 if it is true go to step 5 if not go to step 6
+step 5: print i
+step 6: i=i+1
+step 7: repeat the steps 4-6 until i<=n otherwise go to step 8
+step 8: stop

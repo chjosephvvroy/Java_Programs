@@ -1,0 +1,35 @@
+problem solving technique
+we need to understand the problem 
+identify the possible solutions
+finding best solution for the problem 
+
+finding area of rectangle
+area of rectangle 
+length*breadth
+length=value
+breadth=value
+
+
+3 tools are used for problem solving
+algorithm
+flowchart
+pseudocode
+
+definition: algorithm step by step procedure to solve a problem is called algorithm
+
+3 steps required to write algorithm
+input 
+process 
+output
+
+
+
+
+charecterstics of an algorithm
+1.input-should accept atleast one input
+2.output-should produce atleast one output 
+3.Definiteness-each instruction must be clear and unambiguous
+4.finiteness-algorithm should terminate in a finite number of steps
+5.effectiveness-program must be executed within less time and less space 
+
+

@@ -1,0 +1,9 @@
+
+write the algorithm to find area of square 
+
+step 1: start
+step 2: declare side, area
+step 3: read the value into side 
+step 4: calculate area of the square using the formula area<--side*side
+step 5: print area
+step 6: stop

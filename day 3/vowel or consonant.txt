@@ -1,0 +1,11 @@
+write an algorithm for check an alphabet is vowel or consonant
+
+
+step 1: start
+step 2: declare charecters
+step 3: read the values into charecters 
+step 4: if the charecter is equals to a or e or i or o or u
+step 5: print charecter is vowel
+        else
+        print charecter is consonant 
+step 6: stop

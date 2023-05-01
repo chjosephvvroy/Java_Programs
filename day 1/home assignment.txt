@@ -1,0 +1,20 @@
+1.Addition of three numbers
+2.average of three numbers
+3.area of the rectangle,square
+4.perimeter of rectangle,square
+5.student - read 5 subject marks find the percentage
+6.student - read 5 subject marks find the percentage print A,B,C,D,E
+7.positive or negative number
+8.even or not
+9.odd or not
+10.voter eligiblity
+11.print bitlabs 10times
+12.print 1 to 10
+15.print sum of number upto 20
+16.print 1 to 20 even number 
+17.print 1 to 20 odd numbers
+18.print the sum of even numbers  from 1to 10
+19.print the sum of odd numbers  from 1to 10
+20.count the total even numbers from 1 to 50
+21.factor of a number
+22.perfect number

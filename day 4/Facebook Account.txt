@@ -1,0 +1,10 @@
+write an algorithm to find sum and average of three numbers
+
+step 1: start
+step 2: declare number1, number2, number3, sum, average
+step 3: read the values into number1, number2, number3
+step 4: calculate sum off three numbres using the formula<--number1+number2+number3
+step 5: print sum
+step 6: calculate average of three numbers using the formula<--(number1+number2+number3)/3
+step 7: print average
+step 8: stop

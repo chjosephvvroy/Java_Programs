@@ -1,0 +1,21 @@
+print bilabs for 5 times
+ 
+step1:start
+step2:declare variable count
+step3:initialize coutn with 1
+step4:check if (count<=5) if is true goto step4, otherwise step8
+step5:print bitlabs
+step6:count=count+1
+step7:repeat step 4 to 6 until it reaches count<=5
+step8:stop
+ 
+begin
+declare count
+assin count=1
+//for 1 to 5 times do
+while(count<=5)
+do
+print biltabs
+count=count+1
+end while
+end

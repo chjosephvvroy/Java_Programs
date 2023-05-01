@@ -1,0 +1,10 @@
+write the algorithm to find simple intrest
+
+step1: start
+step2: declare principle, time, rate of intrest, simple intrest
+step3: read the values into principle, time, rate of intrest, simple intrest
+step 4: calculate simple intrest using the formula<--(principle*rate of intrest*time)/100
+step 5: print simple intrest 
+step 6: stop
+
+Bracket needs to be included in case of calculating average simple interest

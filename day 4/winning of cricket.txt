@@ -1,0 +1,14 @@
+write an algorthim for prediction of winnig of cricket match
+ 
+step 1: start
+step 2: declare batch 1, batch2, previous winning scores, batsman1 score, batsman2 score
+step 3: read the values previous winning scores, batsman runs
+step 4: if previous winning score of batch1 is greater than batch2
+        print batch1 can be victorious
+        else 
+        print batch2 can be victorious 
+step 5: if batsman1 score are greater than  
+        print batch1 is can be victorious
+        else
+        print batch2 can be victorious
+step 6: stop

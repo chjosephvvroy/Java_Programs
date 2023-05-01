@@ -1,0 +1,13 @@
+write an algorithm to find number is even or not
+
+step 1: start 
+step 2: declare number1, number2
+step 3: read the values into number1 
+step 4: IF
+          the numbers are divisible by 2
+           print number1 as even number
+         
+        Else
+        print number1 is not even number
+step 5: stop   
+

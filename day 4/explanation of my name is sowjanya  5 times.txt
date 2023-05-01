@@ -1,0 +1,61 @@
+explanation of my name is sowjanya * 5 times
+
+step1:start
+step2:declare count
+step3:assigning the value 1 to count variable (count=1)
+step4:print "myname is sowjanya"
+step5:incrementing count value by 1 and store the value into count (count =count+1)
+step6: check the condition(count<=5) if count value is greater than 5. if it is not repeat step 4 and 5 until it reaches count value is greater than 5 (count<5)
+step7:stop
+ 
+Iteration 1:
+count =1
+print my name is sowjanya
+count=1+1-->2
+2<5 -->
+ 
+Iteration2:
+my name is sowjanya
+count=2+1-->3
+3<5-->
+ 
+Iteration3:
+my name is sowjanya
+count=3+1-->4
+4<5
+ 
+Iteration4:
+my name is sowjanya
+count=4+1=5
+5<=5
+ 
+Iteration 5:
+my name is sowjanya
+count=5+1-->6
+6<5
+ 
+
+
+when count=1 then                when count=0 then
+count<=5                         count<5
+
+
+
+
+
+count=1
+count<=10 
+count<11
+
+count=0
+count<10
+count<=9
+
+
+
+
+
+
+
+
+

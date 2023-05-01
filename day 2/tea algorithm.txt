@@ -1,0 +1,13 @@
+tea making 
+input- sugar, milk, teapowder
+process- boiling
+output- tea
+
+
+algorithm for making tea
+step 1: start
+step 2: take the ingredients
+step 3: we have to add all the ingredients into the bowl
+step 4: boiling
+step 5: after boiling is done, we will get tea
+step 6: stop

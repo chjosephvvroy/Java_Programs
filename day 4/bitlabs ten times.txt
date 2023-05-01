@@ -1,0 +1,10 @@
+write an algorithm to print bitlabs 10 times
+
+step 1: start 
+step 2: declare count
+step 3: assign the count value 1 to count variable
+step 4: print bitlabs
+step 5: incrementing count value by 1 and store the count value into count (count=count+1)
+step 6: repeat step 4 and 5 intil it reaches count valuep is greater than 10
+(count<10)
+step 7: stop

@@ -1,0 +1,50 @@
+
+
+power
+
+step 1: start
+step 2: declare n, i
+step 3: initialize n=3, i=1
+step 4: calculate power using the formula n=n^1
+step 5: print n
+step 6: increment i value i=i+1
+step 7: repeat 4-6 until i<=10
+step 8: stop
+
+
+
+
+1.)decleration 
+2.)input 
+3.)process 
+4.)output
+
+
+
+if(condition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a. Cash withdrawal flowchart
+b. Account balance inquiry flowchart
+c. Transfer funds flowchart
+d. Bill payment flowchart
+e. Change pin flowchart
+
+
+
