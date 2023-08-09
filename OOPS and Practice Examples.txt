@@ -1,0 +1,121 @@
+Inheritance is used for code reusibility
+polymorphism is used for code readability
+encapsulation is used to protect the data using "private" keyword
+abstraction is achieved by abstract class and interface
+abstract class-->
+abstract methods(contains only decleration but does not contain implementation i.e body but if we want to include body it needed to be overridden in another method,we cannot create an object in abstract class),
+interface(is used achieved for getting 100% abstraction, in interface all the overidden methods need to be implemented, object cannot be created for interface)
+Interface
+
+
+
+Final Keyword can be applied for
+variables-cannot change value of a constant(ex: final int a=10)
+methods-stops method overridingi.e we cant override a method in the sub class
+class-cant perform inheritance
+
+
+conversion of data type into object is done by wrapper classes is called autoboxing
+
+class Wrapper{
+public static void main(String args[]){
+int x=20;
+Integer i=Integer .valueOf(x);
+Integer y=x;
+System .out.println(x+" "+i+" "+y);
+int z=y;
+System.out.println(z);
+}
+}
+
+
+
+import java.util.*;
+class Student
+  {
+    private int rollno;
+    private String name;
+    private String address;
+    public void setRollno(int rollno)
+    {
+      this.rollno=rollno;
+    }
+    public int getRollno()
+    {
+      return this.rollno;
+    }
+    public void setName(String name)
+    {
+      this.name=name;
+    }
+    public String getName()
+    {
+      return this.name;
+    }
+    public void setAddress(String address)
+    {
+      this.address=address;
+    }
+    public String getAddress()
+    {
+    return this.address;
+    }
+
+  }
+class StudentManager
+  {
+    Scanner sc=new Scanner(System.in);
+    int size=sc.nextInt();
+    Student student[]=new Student[size];
+    public void createStudent()
+    {
+      for(int i=0;i<size;i++)
+    {
+      student[i]=new Student();
+      System.out.println("enter rollno");
+      int rno=sc.nextInt();
+      student[i].setRollno(rno);
+      System.out.println("enter name");
+      String name=sc.next();
+      student[i].setName(name);
+      System.out.println("enter address");
+      String address=sc.next();
+      student[i].setAddress(address);
+
+    }
+    }
+      public void display()
+        {
+        for(int i=0;i<size;i++)
+          {
+        System.out.println(student[i].getRollno()+" "+student[i].getName()+" "+student[i].getAddress());
+        }
+      }
+    public void updateByRollno(int rollno)
+    {
+      for(int i=0;i<size;i++)
+        {
+          if(rollno==student[i].getRollno())
+          {
+            student[i].setAddress("hyd");
+            System.out.println("student is updated");
+            display();
+          }
+        }
+    }
+  }
+class Main
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      StudentManager st=new StudentManager();
+      st.createStudent();
+      System.out.println("All Student details are");
+      st.display();
+      System.out.println("enter the rollno that you want to update the student's address");
+      int rollno=sc.nextInt();
+      st.updateByRollno(rollno);
+
+    }
+  }

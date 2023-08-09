@@ -1,0 +1,248 @@
+
+
+import java.util.Scanner;
+class Search
+  {​​
+    public static void searchElement(int a[],int key)
+    {​​
+      int i;
+      int count=0;
+      for(i=0;i<a.length;i++)
+        {​​
+          if(a[i]==key)
+          {​​
+            count++;
+            break;
+          }​​
+        }​​
+      if(count>0)
+      {​​
+        System.out.println("element is found at "+i+ "th index");
+      }​​
+           else
+            System.out.println("element is not found");
+    }​​
+    public static void main(String args[])
+    {​​
+      Scanner sc=new Scanner(System.in);
+      int a[]={​​34,78,90,12,34,56}​​;
+      System.out.println("enter the key value to search");
+      int key=sc.nextInt();
+      searchElement(a,key);
+    }​​
+  }​​
+​
+
+
+
+ class LeftRotation
+  {​​
+    public static void main(String args[])
+    {​​
+      int a[]={​​23,67,44,56,90,12}​​;
+      System.out.println("Befor perfroming left roatation  ");
+      for(int i=0;i<a.length;i++)
+        {​​
+          System.out.print(a[i]+" ");
+        }​​
+      System.out.println();
+      int temp=a[0];//23
+      for(int i=0;i<a.length-1;i++)
+        {​​
+          a[i]=a[i+1];
+        }​​
+      a[a.length-1]=temp;
+      System.out.println("after perfroming left roatation by 1 position ");
+      for(int i=0;i<a.length;i++)
+        {​​
+          System.out.print(a[i]+" ");
+        }​​
+    }​​
+  }​​
+
+input from keyboard
+
+
+
+
+
+
+
+import java.util.Scanner;
+class LeftRotation
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      int a[]={23,67,44,56,90,12};
+      System.out.println("enter the position value how many you want to shift");
+      int number=sc.nextInt();
+      System.out.println("Befor perfroming left roatation  ");
+      for(int i=0;i<a.length;i++)
+        {
+          System.out.print(a[i]+" ");
+        }
+      System.out.println();
+      for(int i=0;i<number;i++) //outer for loop
+        {
+      int temp=a[0];
+      for(int j=0;j<a.length-1;j++) //inner for loop
+        {
+          a[j]=a[j+1];
+        }
+      a[a.length-1]=temp;
+    }
+      System.out.println("after perfroming left roatation by" +number+ " position ");
+      for(int i=0;i<a.length;i++)
+        {
+          System.out.print(a[i]+" ");
+        }
+    }
+  }
+
+
+
+
+
+
+
+
+Two dimensional array
+
+import java.util.Scanner;
+class Sample
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the row size");
+      int row=sc.nextInt();
+      System.out.println("enter the coloumn size");
+      int coloumn=sc.nextInt();
+      int arr[][]=new int[row][coloumn];
+      System.out.println("enter the elements");
+      for(int i=0;i<row;i++)
+        {
+          for(int j=0;j<coloumn;j++)
+            {
+              arr[i][j]=sc.nextInt();
+            }
+        }
+      System.out.println("the elements are");
+      for(int i=0;i<row;i++)
+        {
+          for(int j=0;j<coloumn;j++)
+            {
+              System.out.print(arr[i][j]+" ");
+            }
+          System.out.println();
+        }
+     
+               
+    }
+  }
+
+
+
+
+
+import java.util.Scanner;
+class Samples
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the row size");
+      int row=sc.nextInt();
+      System.out.println("enter the coloumn size");
+      int coloumn=sc.nextInt();
+      int arr[][]=new int[row][coloumn];
+      System.out.println("enter the elements");
+      for(int i=0;i<row;i++)
+        {
+          for(int j=0;j<coloumn;j++)
+            {
+              s
+            }
+        }
+      System.out.println("the elements are");
+      for(int i=0;i<row;i++)
+        {
+          for(int j=0;j<coloumn;j++)
+            {
+              System.out.print("["+i+"]["+j+"] = "+arr[i][j]+" ");
+            }
+          System.out.println();
+        }
+     
+               
+    }
+  }
+
+
+
+
+STRING METHODS
+
+Length method 
+
+    //length()
+import java.util.Scanner;
+class Sample
+  {​​
+    public static void main(String args[])
+    {​​
+      String str="hello bitlabs";
+      int str1=str.length();
+      System.out.println("the length is :"+str1);
+        
+    }​​
+  }​​
+
+
+charAt Method
+
+    //charAt()
+import java.util.Scanner;
+class Sample
+  {​​
+    public static void main(String args[])
+    {​​
+      String str="hello bitlabs";
+      char ch=str.charAt(3);
+      System.out.println("character is "+ch);
+        
+    }​​
+  }​​
+
+
+
+CharAt using for loop
+
+import java.util.Scanner;
+class CharAtFor1{
+  public static void main(String[] args){
+    String str="hello";
+    for(int i=0;i<str.length();i++){
+      System.out.println(str.charAt(i));
+    }
+  }
+}
+
+
+//equals() & equalsIgnoreCase()
+import java.util.Scanner;
+class Sample
+  {
+    public static void main(String args[])
+    {
+      String s1="hai";
+      String s2="hai";
+      String s3="Hai";
+      String s4="welcome";
+   System.out.println(s1.equals(s2));
+       System.out.println(s1.equals(s3));
+       System.out.println(s1.equals(s4));
+      System.out.println(s1.equalsIgnoreCase(s3));
+    }
+  }

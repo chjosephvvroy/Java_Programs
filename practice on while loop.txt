@@ -1,0 +1,185 @@
+
+//Prinitng the individual digits from  a number
+import java.util.Scanner;
+class Digit
+  {​​
+    public static void main(String args[])
+    {​​
+      Scanner sc=new Scanner(System.in);
+      int number=sc.nextInt();//345
+      while(number>0)//345>0 //34>0  //3>0 //0>0
+        {​​
+          int digit=number%10;//5 //4 //3
+          System.out.println(digit);//5  //4 //3
+          number=number/10;//34 //3 //0
+          
+        }​​
+    }​​
+  }​​
+
+
+
+printing last and the first
+
+import java.util.Scanner;
+class Sample
+  {
+    public static void main(String args[])
+    {   
+     //number= 567
+      Scanner sc=new Scanner(System.in);
+      int firstDigit=0;
+      System.out.println("enter the number");
+      int number=sc.nextInt();
+      int temp=number;
+      while(number>0)
+        {
+          firstDigit=number%10;
+          number=number/10;
+        }
+    //  System.out.println("number is"+number);
+      System.out.println("first digit is:"+firstDigit);
+      int lastDigit=temp%10;
+      System.out.println("last digit is"+lastDigit);
+      
+    }
+  }
+
+
+
+
+
+
+
+//first iteration       //second iteration
+number=345                 number=34 (34>0)
+                              34%10 =4
+                              34/10 =3
+                              
+  temp=number=345
+  (345>0) -- true
+  345%10 = 5
+  345/10= 34
+ 
+  
+  //thrid iteration
+   3>0
+   3%10 =3
+  3/10 =0               
+ 
+  firstDigit =3
+ 
+  lastDigit=354%10 =5 (temp%10)
+
+
+
+printing reverse number
+
+import java.util.Scanner;
+class Sample
+  {
+    public static void main(String args[])
+    {   
+     //number= 567
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the number");
+      int number=sc.nextInt(); //893
+      int reverse=0; 
+      while(number>0)//893>0 //89>0   //8>0  //0>0-stop
+        {
+          int digit=number%10; //digit=3 //89%10 = 9  //8%10=8
+          reverse=(reverse*10)+digit; //(0*10)+3 =3 // (3*10)+9=39 //(39*10)+8 = 398
+          number=number/10; //893/10=89 //89/10=8 //8/10=0
+          
+        }
+      System.out.println("reverse number is "+reverse);
+    }
+  }
+
+
+
+PrimeOrNot
+import java.util.Scanner;
+class PrimeOrNot
+  {
+    public static void main(String args[])
+    {
+      Scanner prime=new Scanner(System.in);
+     System.out.println("Enter the limit");
+      int a=prime.nextInt();
+      int count=0;
+      for(int i=1;i<=a;i++)
+        {
+          if(a%i==0)
+          {
+           count++;
+          }
+        }
+          if(count==2)
+          {
+            System.out.println("Is a prime");
+          }
+          else
+          {
+            System.out.println("Not a prime");
+          }
+        }
+    }
+
+
+import java.util.Scanner;
+class PerfectNum
+  {
+    public static void main(String ards[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a value to find whether it is perfect number or not");
+      int num=sc.nextInt();
+      int sum=0,temp=num,i;
+      for(i=1;i<num;i++)
+        {
+          if(num%i==0)
+          {
+            sum=sum+i;
+          }
+        }
+      if(temp==sum)
+      {
+        System.out.println("Given number is perfect number");
+      }
+      else
+       System.out.println("Given number is not perfect");
+    }
+  }
+
+
+
+
+
+import java.util.Scanner;
+class PerfectNumber
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the number to check whether it is a perfect number of not");
+      int n=sc.nextInt();
+      int temp=n;
+      int sum=0;
+     for(int i=1;i<n;i++)
+       {
+         if(n%i==0)
+         {
+          sum=sum+i;
+         }
+       }
+      if(temp==sum)
+      {
+        System.out.println("Given number is a perfect number");
+      }
+      else
+      {
+        System.out.println("Given number is not a perfect number");
+      }
+    }
+  }

@@ -1,0 +1,149 @@
+class Unique
+  {
+    public static void main(String args[])
+    {
+      int a[]={2,3,2,1,3,4,3,5};
+      int size=a.length;
+      boolean b[]=new boolean[size];
+      for(int k=0;k<size;k++)
+        {
+          b[k]=false;
+        }
+    System.out.println("Unique elements are");
+      for(int i=0;i<a.length;i++)
+        {
+          int count=1;
+          if(b[i]==true)
+            continue;
+          for(int j=i+1;j<a.length;j++)
+            {
+              if(a[i]==a[j])
+              {
+                count++;
+                b[j]=true;
+              }
+            }
+            if(count==1)
+          System.out.println(a[i]);
+        }
+    }
+  }
+
+
+
+
+import java.util.*;
+class InsertElement
+  {​​
+    public static void main(String args[])
+    {​​
+      Scanner sc=new Scanner(System.in);
+      int a[]={​​23,45,62,90,84}​​;
+      int b[]=new int[a.length+1];
+      System.out.println("enter the value to insert");
+      int value=sc.nextInt();
+      System.out.println("enter the index position ");
+      int pos=sc.nextInt();
+      for(int i=0;i<b.length;i++)
+        {​​
+          if(i==pos)
+          {​​
+            b[i]=value;
+          }​​
+          else if(i>pos)
+          {​​
+            b[i]=a[i-1];
+          }​​
+          else 
+          {​​
+            b[i]=a[i];
+          }​​
+            
+        }​​
+      System.out.println("the array elements are");
+      for(int i=0;i<b.length;i++)
+        System.out.print(b[i]+" ");
+      
+    }​​
+  }​​
+
+
+
+
+
+import java.util.*;
+class Delete
+  {
+    public static void main(String [] args)
+    {
+      int[]a=new int[6];
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter size of the array");
+      int size=sc.nextInt();
+      for(int i=0;i<size;i++)
+        {
+          a[i]=sc.nextInt();
+        }
+          System.out.println("Bfore the delection");
+          for(int i=0;i<size;i++)
+            {
+              System.out.println(a[i]+"");
+            }
+          System.out.println("enter the postion where to delete");
+          int pos=sc.nextInt();
+          for(int i=pos;i<size-1;i++)
+            {
+              a[i]=a[i+1];
+            }
+          System.out.println("After the delection");
+          for(int i=0;i<size;i++)
+            {
+              System.out.println(a[i]+"");
+            }
+        }
+    }
+
+
+
+
+import java.util.Scanner;
+class ThePrime
+  {
+    public static void main(String args[])
+    {
+     Scanner P=new Scanner(System.in);
+      int a[]=new int[10];
+       System.out.println("Enter values");
+      for(int i=0;i<a.length;i++)
+         {
+           a[i]=P.nextInt();
+         }
+         for(int i=0;i<a.length;i++)
+          
+           {
+             if(a[i]%2==1)
+             {
+                System.out.println("Prime numbers are :"+a[i]);
+             }
+           }
+         
+           
+    }    
+
+
+class Sample
+  {
+    public static void main(String args[])
+    {
+      int arr[][]={{2,3},{6,7}};
+      for(int i=0;i<2;i++)
+        {
+          for(int j=0;j<2;j++)
+            {
+              System.out.print(arr[i][j]+" ");
+            }
+            
+        }
+        
+    }
+  }

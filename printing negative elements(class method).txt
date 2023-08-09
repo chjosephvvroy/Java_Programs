@@ -1,0 +1,30 @@
+using method
+//Print negative elements
+import java.util.Scanner;
+class ArrayEx
+  {
+    public static void negativeElement(int a[])
+    {
+      System.out.println("Negative elements are");
+      for(int i=0;i<a.length;i++)
+        {
+          if(a[i]<0)
+          {
+            System.out.print(a[i]+" ");
+          }
+        }
+    }
+    public static void main(String args[])
+    {
+      int arr[]=new int[6];      
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<arr.length;i++)
+        {
+          arr[i]=sc.nextInt();
+        }
+      negativeElement(arr);
+     
+        
+    }
+  }

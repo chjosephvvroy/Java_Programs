@@ -1,0 +1,102 @@
+What is exception
+Exception is a runtime error which occurs during execution of a program, 
+when the exception of the program is stopped/terminated abnormally.
+when the program stops the exception needed to be handled 
+
+types of exceptions 
+1.)checked exceptions(detected during compile time)
+class not found exception, IO Exception Sql Exception, File not found Exception
+2.)unchecked exceptions(detected at runtime)
+arthematic exception(ex: 56/0), array indexout of bond exception, number format exception, null pointer exception, string out of bond exception
+
+
+Null Pointer Exception
+
+class ExceptionEx
+
+  {
+
+    public static void main(String args[])
+
+    {
+
+      String str=null;
+
+      System.out.println(str.length());
+
+  }
+
+  }
+
+
+Number Format Exception
+class ExceptionEx
+
+  {
+
+    public static void main(String args[])
+
+    {
+
+      String str="123@";
+
+      int x=str.Integer.valueOf(str);
+
+      System.out.println(x);
+
+  }
+
+  }
+
+
+
+try block: contains exception generated code
+
+syntax
+try
+{
+exception generated code
+} 
+
+
+catch block
+syntax
+catch(Exception e)
+{
+System.ou.println(e);
+}
+System.out.println("exception handled")
+
+
+
+
+
+
+
+
+
+
+class ExceptionEx
+  {
+    public static void main(String args[])
+    {
+      String str="123@";
+      try
+        {
+      int x=Integer.valueOf(str);
+        }
+      catch(Exception e)
+        {
+          e.printStackTrace();
+
+        }
+      System.out.println("exception handled");
+  }
+  }
+
+
+
+
+
+
+

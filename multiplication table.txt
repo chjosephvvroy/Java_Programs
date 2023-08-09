@@ -1,11 +1,16 @@
-multiplication table
-
-step 1: start
-step 2: declare n,i,r
-step 3: initialize n=2, i=1
-step 4: check n<=10 it is true go to step step 5
-step 5: calculate r using the formula r=n*i
-step 6: print r
-step 7: increment i=i+1
-step 8: repeat the steps 4-7 until i<=10
-step 9: stop
+import java.util.*;
+class Multiplication
+  {
+    public static void main(String[] args)
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the table you want ");
+      int n=sc.nextInt();
+      int res;
+      for(int i=1;i<=10;i++)
+        {
+        res=n*i;
+      System.out.println(n+"*"+i+"="+res);
+        }
+    }
+  }

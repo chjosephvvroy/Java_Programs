@@ -1,0 +1,194 @@
+throwable is the root
+
+Exceptions are solved by develper
+errors are not solved by developer
+
+Throw: it is used to throw the exceptions explicitly(manually) in the methods or constructor developer  by the developer
+it is used to throw custom exceptions
+
+from the methods we can throw the exceptions
+throw new AithmeticException("cant divide")
+
+at a time we can throw only onne exception using THROW keyword
+public static void validateAge(int age)throws
+
+throws is used to handle checked exceptions 
+throw is used to handle custom exceptions
+
+
+Throw 
+1.)SYNTAX: throw new exception_class("error message");
+2.)The Java throw keyword is used to throw an exception explicitly from the method or constructor.
+3.)We specify the exception object which is to be thrown. The Exception has some message with it that provides the error description. 
+4.)We can throw either checked or unchecked exceptions in Java by throw keyword. It is mainly used to throw a custom exception.
+5.)We can throw single exception using throw keyword at a time.
+
+Throws
+1.)SYNTAX: return_type method_name() throws exception_class_name{  //method code  
+}
+2.)The Java throws keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception. So, it is better for the programmer to provide the exception handling code so that the normal flow of the program can be maintained.
+3.)Exception Handling is mainly used to handle the checked exceptions. If there occurs any unchecked exception such as NullPointerException, it is programmers' fault that he is not checking the code before it being used.
+4.)We can declare multiple exceptions at a time using throws keyword
+
+
+
+
+
+
+
+import java.util.*;
+class ExceptionEx
+  {
+    public static void validateAge(int age) throws ArithmeticException
+    {
+      if(age<18)
+      {
+        throw new ArithmeticException("you can't elligible to cast your vote");
+      }
+      else
+        System.out.println("you are elligible to vote");
+    }
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter your age");
+      int age=sc.nextInt();
+      try{
+      validateAge(age);
+      }
+      catch(ArithmeticException e)
+        {
+          System.out.println("cathc block caught the exception");
+        }
+      System.out.println("exception is handled");
+    }
+  }
+
+
+CUSTOM EXCEPTION
+
+
+Rule to create custom exception
+1.create a custom exception and we have to extend the exception class
+2.we have to create constructor and also we have to call e
+
+
+
+
+
+import java.util.*;
+class InvalidAgeException extends Exception
+  {
+    InvalidAgeException(String message)
+    {
+      super(message);
+    }
+  }
+class AgeValidator
+  {
+    public static void validateAge(int age) throws InvalidAgeException
+    {
+      if(age<18)
+      {
+        throw new InvalidAgeException("not elligible");
+      }
+      else
+        System.out.println("you are elligible");
+    }
+  }
+class ExceptionEx
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter age");
+      int age=sc.nextInt();
+      try{
+      AgeValidator.validateAge(age);
+      }
+      catch(InvalidAgeException e)
+        {
+
+          e.printStackTrace();
+        }
+      System.out.println("Exception handled");
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+import java.util.*;
+
+class InvalidMobileNumberException extends Exception{
+
+  InvalidMobileNumberException(String message)
+
+  {
+
+    super(message);
+
+  }
+
+}
+
+class ValidateNumber 
+
+  {
+
+    public static void validate(long mobileno) throws InvalidMobileNumberException
+
+    {
+
+      String str=String.valueOf(mobileno);
+
+      if(str.length()!=10)
+
+      {
+
+        throw new InvalidMobileNumberException("mobile number is invalid");
+
+      }
+
+      else
+
+           System.out.println("is valid");
+
+
+    }
+
+    public static void main(String args[])
+
+    {
+
+      Scanner sc=new Scanner(System.in);
+
+      System.out.println("enter mobile number");
+
+      long number=sc.nextLong();
+
+      try{
+
+      validate(number);
+
+      }
+
+      catch(InvalidMobileNumberException e)
+
+        {
+
+          e.printStackTrace();
+
+        }
+
+      System.out.println("exception handled");
+
+    }
+
+  }
