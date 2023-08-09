@@ -1,0 +1,195 @@
+conversion of primitive datatype to object is called as autoboxing
+conversion of object to primitive data type is called as unboxing
+//Java Program to convert all primitives into its corresponding   
+//wrapper objects and vice-versa  
+public class WrapperClassDemo{  
+public static void main(String args[]){  
+byte b=10;  
+short s=20;  
+int i=30;  
+long l=40;  
+float f=50.0F;  
+double d=60.0D;  
+char c='a';  
+boolean b2=true;  
+
+//Autoboxing: Converting primitives into objects  
+Byte byteobj=b;  
+Short shortobj=s;  
+Integer intobj=i;  
+Long longobj=l;  
+Float floatobj=f;  
+Double doubleobj=d;  
+Character charobj=c;  
+Boolean boolobj=b2;  
+
+//Printing objects  
+System.out.println("---Printing object values---");  
+System.out.println("Byte object: "+byteobj);  
+System.out.println("Short object: "+shortobj);  
+System.out.println("Integer object: "+intobj);  
+System.out.println("Long object: "+longobj);  
+System.out.println("Float object: "+floatobj);  
+System.out.println("Double object: "+doubleobj);  
+System.out.println("Character object: "+charobj);  
+System.out.println("Boolean object: "+boolobj);  
+
+//Unboxing: Converting Objects to Primitives  
+byte bytevalue=byteobj;  
+short shortvalue=shortobj;  
+int intvalue=intobj;  
+long longvalue=longobj;  
+float floatvalue=floatobj;  
+double doublevalue=doubleobj;  
+char charvalue=charobj;  
+boolean boolvalue=boolobj;  
+
+//Printing primitives  
+System.out.println("---Printing primitive values---");  
+System.out.println("byte value: "+bytevalue);  
+System.out.println("short value: "+shortvalue);  
+System.out.println("int value: "+intvalue);  
+System.out.println("long value: "+longvalue);  
+System.out.println("float value: "+floatvalue);  
+System.out.println("double value: "+doublevalue);  
+System.out.println("char value: "+charvalue);  
+System.out.println("boolean value: "+boolvalue);  
+}}  s
+
+
+compile time polymorphism or static polymorhism
+runtime plymorphism or dynamic polymorphism 
+method overlodaing is example of compile time poly morphism
+
+
+encapsulation accessed class=data+methods
+encapsulation is achieved by class(variables=instance), public, private
+
+
+
+/*to implement encapsulation in java:
+
+1) Make the instance variables private so that they cannot be accessed directly from outside the class. You can only set and get values of these variables through the methods of the class.
+
+2) Have getter and setter methods in the class to set and get the values of the fields.
+
+ 
+
+  */
+
+ 
+
+ 
+
+class EncapsulationDemo{
+
+    private int ssn;
+
+    private String empName;
+
+    private int empAge;
+
+ 
+
+    //Getter and Setter methods
+
+    public int getEmpSSN(){
+
+        return ssn;
+
+    }
+
+ 
+
+    public String getEmpName(){
+
+        return empName;
+
+    }
+
+ 
+
+    public int getEmpAge(){
+
+        return empAge;
+
+    }
+
+ 
+
+    public void setEmpAge(int newValue){
+
+        empAge = newValue;
+
+    }
+
+ 
+
+    public void setEmpName(String newValue){
+
+        empName = newValue;
+
+    }
+
+ 
+
+    public void setEmpSSN(int newValue){
+
+        ssn = newValue;
+
+    }
+
+}
+
+public class EncapsulationTest{
+
+    public static void main(String args[]){
+
+         EncapsulationDemo obj = new EncapsulationDemo();
+
+         obj.setEmpName("pavan");
+
+         obj.setEmpAge(44);
+
+         obj.setEmpSSN(112233);
+
+      //The following comment lines gererate errors 
+
+    // System.out.println("Employee Name: " + obj.empName);
+
+    // System.out.println("Employee Age: " + obj.empAge);
+
+   //  System.out.println("Employee SSN: " + obj.ssn);
+
+      System.out.println("--------------");
+
+         System.out.println("Employee Name: " + obj.getEmpName());
+
+         System.out.println("Employee SSN: " + obj.getEmpSSN());
+
+         System.out.println("Employee Age: " + obj.getEmpAge());
+
+    } 
+
+}
+
+
+
+
+
+Ø Abstract class is a java class, it able to allow zero or more number of concrete methods and zero or more number of abstract methods.
+
+Ø To declare abstract classes, it is not at all mandatory condition to have at least one abstract method, we can declare abstract classes with 0 no of abstract methods, but, if we want to declare a method as an abstract method then the respective class must be abstract class.
+
+Ø For abstract classes, we are able to create only reference variables;
+
+    we are unable to create objects.
+
+
+
+INTERFACES: similar to class but with abstract
+
+1.)interfaces allow only contain abstract methods but java 8 can also allow default methods
+2.)interfaces will provide more sharability in java applications when compared with classes and abstract classes
+3.)interface keyword needed to be used to create interface in java
+4.) in interface by default access modifier is public and methods are abstract

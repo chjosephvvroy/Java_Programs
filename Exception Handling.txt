@@ -1,0 +1,78 @@
+PREVIOUS CLASS OVERVIEW
+
+final keyword
+
+Types of oops principles
+inheritance: Child class deriving attributes from paarent class. types of inheritance are single inheritance, multilevel inheritance, hierarchial inheritance, multiple inheritance(possible only through interfaces), hybrid inheritance 
+polymorhism: existing in more than one form. types of polymorphism are static polymorhism and dynamic polymorphism
+encapsulation: hiding or securing data and methods in one unit called class
+abstraction: hiding unuseful data to the public. Abstract class is a java class, it able to allow zero or more number of concrete methods and zero or more number of abstract methods.
+
+
+method overriding: same method name and with same parameters
+
+INTERFACES: similar to class but with abstract
+
+1.)interfaces allow only contain abstract methods but java 8 can also allow default methods
+2.)interfaces will provide more sharability in java applications when compared with classes and abstract classes
+3.)interface keyword needed to be used to create interface in java
+4.) in interface by default access modifier is public and methods are abstract
+
+
+
+to achieve overriding we need two classes super class and sub class
+ 
+
+1.)inhieritance is achieved by using extends keyword
+2.)polymorphism is achieved by method overloading and overriding are needed
+3.)encapsulation is achieved by Declaring the variables of a class as private.Providing public setter and getter methods to modify and view the                  variables values.
+4.)abstraction is achieved by using either an abstract class or an interface
+
+
+
+
+in interfaces by default
+
+EXCEPTION HANDLING
+ØExceptions are exceptional/unusual/abnormal events that occur during the execution of programs that disrupts the normal flow of instructions
+if exception is not handled then the prgrm will terminate abnormally
+exceptions are found during runtime
+
+catch blocks must be written after try block
+within try block no of catch blocks can be written
+the statement in final block is executed even there is exception or not
+
+Exception:Exceptions are exceptional/unusual/abnormal events that occur during the execution of programs that disrupts the normal flow of instructions
+ Exception handling: handling the exceptions is called exception handling
+ try, catch, throw, throws, finally, try block, catch block, order of try block and catch block, 
+types of Exceptions
+arthematic exception
+null pointer exception
+
+
+import java.util.Scanner;
+public  class ExceptionHandling{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("netr the a value");
+      try{
+      int a=sc.nextInt();
+      int c=sc.nextInt();
+      int sum=a/c;
+      System.out.println(sum);
+      }
+      catch(ArithmeticException e){
+      System.out.println("eneter the correst input value");
+      int b=sc.nextInt();
+      int d=sc.nextInt();
+      int sum=b/d;
+      System.out.println(sum);
+      }
+
+
+  }
+}
+
+
+
+

@@ -1,0 +1,66 @@
+//StringBuffer class
+public class Main
+{
+    public static void main(String[] args) {
+        StringBuffer sb=new StringBuffer("bitlabs");
+        System.out.println(sb);
+    }
+}
+ 
+
+
+
+
+    //String Immutability class
+public class Main
+{​​
+    public static void main(String[] args) {​​
+        StringBuffer sb=new StringBuffer("welcome");
+        sb.append("bitlabs");
+        System.out.println(sb);
+    }​​
+}​​
+ 
+
+
+
+//String reverse()
+public class Main
+{
+    public static void main(String[] args) {
+        StringBuffer sb=new StringBuffer("welcome");
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+
+
+
+
+
+
+//String insert()
+public class Main
+{
+    public static void main(String[] args) {
+        StringBuffer sb=new StringBuffer("welcome");
+        sb.insert(2,"to");
+        System.out.println(sb);
+    }
+}
+
+
+
+
+
+//String Immutability class
+public class Main
+{
+    public static void main(String[] args) {
+        String str=new String("welcome"); 
+        String str1=new String("bitlabs");
+        String str4=str.concat(str1); 
+        System.out.println(str);
+        System.out.println(str4);
+    }
+}

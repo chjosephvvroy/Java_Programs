@@ -1,0 +1,10 @@
+write an algorithm to find admission possibiity based on academic marks
+
+step 1: start
+step 2: declare the marks of aptitude_marks reasoning_marks, candidate_percentage
+step 3: read the academic marks of aptitude_marks, reasoning_marks 
+step 4: calculate the candidate_percentage using the formula<--((aptitude_marks+reasoning_marks)/200)*100
+step 5: if the candidate_percentage is greater than 70%
+             print candidate is eligible for admission
+        else
+             print candidate is not eligible for admission

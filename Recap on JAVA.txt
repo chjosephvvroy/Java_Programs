@@ -1,0 +1,81 @@
+type casting is of two types
+
+int myInt=9;
+double myDoouble=myInt
+
+
+double num=10.99;
+int data=(int)num
+
+
+how to convert integer to string
+To convert an integer to a string in Java, 
+you can use the 
+Integer.toString() method 
+            or 
+the String.valueOf() method. 
+
+
+
+To convert a string to an integer in Java, you can use the 
+Integer.parseInt() method 
+             or 
+the Integer.valueOf() method
+
+data tpye to class
+
+int x=100;
+Integer y=x;
+
+
+nextByte();
+nextShort();
+nextInt();
+nextLong();
+nextFloat();
+nextDouble();
+CharAt();
+next();
+nextBoolean()
+
+charAt(index n)
+
+
+operators are used to manipulate the data
+
+operators types are
+Arthematic Operators:  +, -, *, /, %
+Relational Operators: <, >, >=, <=, ==, !=
+Logical Operators: &&, ||, !
+Assignment Operators: =
+ternary Operators: used to evaluate boolean values
+bitwise Operators: used perform operations bit by bit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

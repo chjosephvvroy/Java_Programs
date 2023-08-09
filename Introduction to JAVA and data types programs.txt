@@ -1,0 +1,232 @@
+Java is widely used language
+high level language
+object oriented language
+platform independent
+Topics
+ 
+1.what is Java
+2. History 
+3. Why Java (features) is popular
+4. Structure of java program
+5. JVM, JRE and JDk
+5. Datatypes
+6. variables
+7. Operators
+ 
+high level - human
+Low level  - computer (machine langugae- (0 and 1) (binary)
+ 
+platform independent - WORA (write once read anywhere)
+ 
+simple - syntax is simple
+in c - pointer, operator overloading, explicity memory allocation/deallocation (those concepts removed in java)
+ 
+object oriented
+ 
+C - procedural oriented language (every thing we have represented in functions)
+Java - object oriented language (classes and object)
+ 
+Inheritance         Acquiring the properties from parent class to child class
+polymorphism        having many forms (single action that can be performed in many ways)  
+encapsulation      wrapping up data memebers, member function into a single units
+Abstraction         hiding the implementation to the user only shows funtionality to the user
+ 
+secure: explicitly pointer
+it has exception handling ---
+ 
+os - 32 bit or 64 bit
+ 
+c, C++ --> int - 2 bytes  --- 32 bit
+            int - 4 bytes of memory --- 64 bit
+in java --> 32-bit or 64 bit - 4 bytes of memory
+ 
+multi threading
+severl parts of the program executed concurrently
+ 
+class Sample
+{
+public static void main(String args[])
+{
+ 
+System.out.println("hello bitlabs");
+System.out.println("welcome to java");
+System.out.println("Introduction to java");
+ 
+}
+}
+ 
+
+
+high level  - human
+low level - computer (0 and 1)
+ 
+class Sample
+{
+public static void main(String args[])
+{
+System.out.println("welcome to bitlabs");
+}
+}
+ 
+ 
+Translator
+compiler - converts all at once
+Interpreter - converts line by line
+ 
+source code --- machine code (binary code)
+ 
+platform independent
+(Jvm) - java virtual machine
+its a virtual machine
+ 
+1)source code to byte code (intermediate code) (platform independent)
+2) byte code to machine level code (Jvm) -
+source code --- byte code (.class file) ---> compiler
+ 
+javc Sample.java -- (source code to bytecode) .java to .class
+ 
+java Sample  ---> (byte code to machinecode (binary) (0 and 1) ---> jvm
+ 
+ 
+ 
+Data type:it tells what type of data we are stroing into the variable
+ 
+2 types
+ 
+1.primitive
+2. Non primitive
+ 
+primitive data types:
+size is fixed
+ 
+datatype variable_name; //declaration
+datatype variable_name=value; //initialization
+ 
+1.Boolean
+2.short
+3.byte
+4.int
+5.long
+ 
+6.float
+7.double
+ 
+8.character
+ 
+boolean - 1 bit  
+true/ false
+ 
+boolean value=true;
+boolean number;
+ 
+default value of boolean false
+ 
+byte,short,int,long
+ 
+used to store integers or whole numbers
+ 
+90,234,7890,12334
+ 
+byte - 1byte
+short - 2bytes
+int - 4bytes
+long - 8bytes
+ 
+floating
+ 
+float - 4 bytes
+double - 8bytes
+ 
+45.6,89.0
+123.4
+45.890
+syntax
+ 
+float number=567.89;
+ 
+character (char) - stores the single character (alphabet,digits or special characters)
+ 
+a,4,y,@,0
+p
+ 
+syntax
+char value='a';
+ 
+Non primitive: size is not predefined but it is user defined
+String: group of characters (alphates,digits,special characters)
+sowjanya
+sowji123
+ 
+my name is sowjanya
+ 
+String variablename="value";
+ 
+String str="sowjanya";
+String str1="sowjji123";
+String str2="sowji.524@gmail.com";
+
+
+
+
+public class SelfDetails
+  {
+public static void main (String[]args)
+    {
+      String Name="Suhana Begum";
+      String address="BNR nagar";
+      String gender="female";
+      char grade='A';
+      double percentage=90.0;
+      long mobile_no=9014789643L;
+      boolean Marital_status=false;
+    System.out.println("my name is: "+Name);
+      System.out.println("my address is: "+address);
+      System.out.println("gender is: "+gender);
+      System.out.println("grade is: "+grade);
+      System.out.println("percentage is: "+percentage);
+      System.out.println("mobile_no: "+mobile_no);
+      System.out.println("Marital_status is: "+Marital_status);
+    }
+  }
+
+
+
+class BankDetails
+  {
+    public static void main(String args[])
+    {
+      long banknum=63065980000453l;
+      String ifsccode="UNIB067837";
+      String branchname="Ayodhya nagar";
+      String accountholdername="ANUMAKONDA POOJA";
+      long phnum=9346194658l;
+      double balance=4000.00;
+      System.out.println(banknum);
+      System.out.println(ifsccode);
+      System.out.println(branchname);
+      System.out.println(accountholdername);
+      System.out.println(phnum);
+      System.out.println(balance);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

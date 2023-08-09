@@ -1,0 +1,12 @@
+
+Print biggest among three numbers
+1. Begin
+2. Declare num1, num2, num3
+3. If(num1>num2&&num1> num3) 
+4. Print num1 is bigger
+5. Else if(num2>num1&&num2>num3) 
+6. Print num2 is bigger
+7.else
+8. Print num 3 is bigger
+9.end if
+10. End

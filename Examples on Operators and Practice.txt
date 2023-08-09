@@ -1,0 +1,235 @@
+``1 average of 3 numbers
+2 area of the rectangle
+3 perimeter of the  rectangle
+4 area of the square
+5 perimeter of the square
+6 simple interest
+7 percentage of the student
+8 swapping of two numbers
+9 swapping using arthimatic operators
+10 even numbers
+11 positive or negative numbers
+12 finding the biggest number
+13 biggest among 3
+14 grades
+15 declare vowel or consonant
+16 checking eligibility of voting
+17 checking the eligibility of joining the college
+//import packages section
+//create a class  - class classname  (every word of first letter should be capital)
+//create main method       public static void main(String args[])
+//write the code
+//close the main method
+//close the class
+ 
+comments
+single line  -- //
+multi line  -- \*      ---------------------------                 
+-------------------------------------------------
+-------------------------------------- */
+ 
+System.out.print();
+print()
+println()
+System.out.println("hello welcome to bitlabs");
+
+
+
+[12:02 PM] Chandolu Joseph Venkat Vidhya Roy (Guest)
+    mam can you post the ppts
+​[12:03 PM] Sowjanya Uppu
+    variables used to hold the values
+datatype variable_name;
+dataype variable_name=value;
+int number;  //declaration
+number=10;  //initialization
+or
+int number=10; //
+  
+number=20;
+student based project
+student name  = krishna
+student rollno = 123
+student percentage =89.76
+student branch = cse
+student grade = A
+student dob = 12-04-2000
+student address=vijayawada
+student bloodgroup=o+
+studnet mobileno= 9034203204L
+data type= what is the typeof data we are storing
+  
+two types
+1.primitive - size is predefined
+2.non primitive - size is user defined
+1.boolean (true or false) = 1bit
+boolean number=true;
+Integer           floating
+2.byte =1byte               6. float =4bytes
+3.short = 2byte               7. double=8bytes
+4.int 4byte
+5. long 8bytes
+8.character (char) -->single character-->alphabet/digit/special character
+alphabet,specila or digit
+a-z or 0-9, &*(
+char value='A'; 2bytes
+nonprimitive:
+String--> group of character
+alphabets,digits or special character
+String name="sowjanya";
+String username="sowji.524@gmail.com";
+String dob="01-23-2000";
+
+
+
+class ArithmeticOperators
+  {
+    public static void main(String args[])
+    {
+      int a=100,b=20;
+      int c=a+b;
+      System.out.println("arithmetic operators");
+      System.out.print("addition is:"+c);
+      System.out.println("subtraction is"+(a-b));
+      System.out.println("multplication is"+(a*b));
+      System.out.println("division is"+(a/b));
+      System.out.println("remainder is"+(a%b));
+      
+    }
+  }
+
+
+
+
+
+
+//print StudentDetails
+class StudentDetails
+{
+  public static void main(String args[])
+  {
+    String name="Chandolu Joseph Venkat Vidhya Roy";
+    int rollno=104;
+    String branch="EEE";
+    char year='I';
+    float percentage=69.9f;
+    long mobileno=7901017707L;
+    boolean marital_status=false;
+    System.out.println("Student details are:");
+    System.out.println("Student name:"+name);
+    System.out.println("Student rollno:"+rollno);
+    System.out.println("Student branch name:"+branch);
+    System.out.println("Student year:"+year);            
+  }
+}
+
+
+
+Print the results for the following statements considering x = true and y = false
+             1. x&&y
+             2. x||y
+             3. !x
+             4. !y
+     Prompt the user input from the terminal.
+             
+     Sample Input:
+     Enter x as boolean value(true/false): 
+     true
+     Enter y as boolean value(true/false): 
+     false
+     
+     Expected Output:
+     x&&y is: false
+     x||y is: true
+     !x is: false
+     !y is: true
+  Write a program to perform the below actions and print the result. Check if the below numbers are equal or not.
+    1. 30 and 20
+    2. 20 and 20
+    3. 20 and 30
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first number: 
+    30
+    Enter second number: 
+    20
+    
+    Expected Output:
+    30 and 20 is not equal
+  Perform the following operations where a = 10 and b =20 using shorthand assignment operators and print the value of a in console for each expression.
+     1. a*= b
+     2. a-= b
+     3. a/= b
+     4. a%= b
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first value: 
+    10
+    Enter second value: 
+    20
+    
+    Expected Output:
+    a*=b is: 200
+    a-=b is: 180
+    a/=b is: 9
+    a%=b is: 9
+*/
+ 
+Write a program that swaps the values of 2 variables without using third variable.
+    Prompt the user input from the terminal.
+    
+    Sample Input:
+    Enter first number: 
+    12
+    Enter second number: 
+    45
+    
+    Expected Output:
+    Before swapping: 12 , 45
+    After swapping: 45 , 12
+ 
+1.Write a program to initialize a boolean variable and print it's opposite value on console.
+  Sample Input:true
+  Expected Output:false
+ 
+/* Write a program to calculate the circumference of a circle and print the result in whole number. 
+  Allow user to input the cirlce radius from terminal. 
+  Sample Input:
+    radius of the circle=6
+  Expected Output:
+   Circumference of the circle=38
+   
+*/ 
+/*
+1.Write a program to calculate your percentage assuming total marks given. Print the percentage after rounding it off. 
+  Allow user to input the marks from the terminal. 
+  Sample Input:
+        maximum_marks=500
+        total_marks=348
+  Expected Output:
+        percentage= 70%
+       
+*/
+
+
+1 average of 3 numbers
+2 area of the rectangle
+3 perimeter of the  rectangle
+4 area of the square
+5 perimeter of the square
+6 simple interest
+7 percentage of the student
+8 swapping of two numbers
+9 swapping using arthimatic operators
+10 even numbers
+11 positive or negative numbers
+12 finding the biggest number
+13 biggest among 3
+14 grades
+15 declare vowel or consonant
+16 checking eligibility of voting
+17 checking the eligibility of joining the college
+
+

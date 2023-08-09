@@ -1,0 +1,134 @@
+`Write a program that takes an integer input from the user and prints "Positive" if the number is greater than zero, "Negative" if the number is less than zero, and "Zero" if the number is equal to zero.
+Write a program that takes two integer inputs from the user and prints "Equal" if the two numbers are equal, and "Not Equal" if they are not equal.
+Write a program that takes an integer input from the user and prints "Even" if the number is even, and "Odd" if the number is odd.
+
+
+
+Write a program that takes an input number from the user and prints whether it is greater than 10.
+
+
+Write a program that takes two input numbers from the user and prints whether the first number is divisible by the second number.
+
+
+
+Write a program that takes an input number from the user and prints whether it is even or odd
+
+
+
+
+Write a program that takes an input number from the user and prints whether it is a multiple of 5 or not.
+
+if else
+syntax:
+if(condition)
+{
+ 
+// stmts
+ 
+}
+else
+{
+ 
+stmts
+ 
+}
+
+
+
+
+ANSWERS
+
+Positive Or Negative
+
+import java.util.Scanner;
+class PositiveOrNegative
+  {
+    public static void main (String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter a value:");
+      int a=sc.nextInt();
+      if(a>0)
+      {
+       System.out.println(a+" is positive value"); 
+      }
+      else 
+      {
+       System.out.println(a+" is negative value");
+      }
+    } 
+  }
+
+
+
+
+Even Or Odd
+
+import java.util.Scanner;
+class EvenOrOdd
+{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value:");
+    int a=sc.nextInt();
+    if(a%2==0)
+    {
+      System.out.println(a+" is an even number");
+    } 
+    else
+    {
+      System.out.println(a+" is an odd number"); 
+    }
+  }
+}
+  
+
+
+Greater Than Ten
+
+import java.util.Scanner;
+class GreaterThanTen
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter a value");
+      int a=sc.nextInt();
+      if(a>=10)
+      {
+        System.out.println(a+" is greater than 10");
+      }
+       else
+      {
+        System.out.println(a+" is greater than 10");
+      }
+    }
+  }
+
+
+
+
+Divisibility By Num
+
+import java.util.Scanner;
+class DivisibilityByNum
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter num1 value");
+      float num1=sc.nextFloat();
+      System.out.println("enter num2 value");
+      float num2=sc.nextFloat();
+      if(num1%num2==0)
+      {
+        System.out.println((num1%num2)+"is divisible");
+      }
+      else
+      {
+        System.out.println((num1%num2)+"is not divisible");
+      }
+    }
+  }
+      

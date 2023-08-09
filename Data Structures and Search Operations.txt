@@ -1,0 +1,335 @@
+Data Structures: Organising the data in a structured way
+ 
+
+why is data structure required?
+data is accessed quickly and efficiently
+
+types of data structures
+Linear data strucutres: they follow sequential format
+Ex: Arrays can accessed using index numbers, linked lists can be accessed using nodes, stack is where insertions and deletions occur only at one end(top of the stack) example for stack is plates arranged in a buffet, queue has two ends insertion is done at one end and deletion is done at another end follows first in first out principle
+Non linear data structures: they do not follow sequential format
+Ex: tree does not have order, graphs
+
+Searching techniqes types for accessing the data in data structures
+linear search: procedure of searching an element in a sequential order until that element is found. disadvantage of linear searcch is that more time complexity
+ex: element search in an array by iterating the index number
+datatype variable[]=new datatype[size]
+int a[]=new int[]
+binary search: elements need to be arranged in sorted order(ascending or descending)
+
+
+Sorting Techniqes types for accessing the data in data structures
+
+bubble sort: when we drop a stone in bucket of the biggest bubble comes from the bottom to top. it takes n-1 iterations
+insertion sort: we move the element in positioin p lef until its correct place is found among p+1 elements. it takes n-1 iterations
+selection sort
+quick sort
+merge sort
+
+
+
+
+
+
+import java.util.Scanner;
+
+import java.util.Arrays;
+
+class BinarySearch{
+
+  public int binSearch(int arr[],int key,int n){
+
+    int min=0,max=n-1;
+
+    while(min<=max){
+
+      int mid=(min+max)/2;
+
+      if(arr[mid]==key){
+
+        return mid;
+
+      }
+
+      else{
+
+        if(arr[mid]<key){
+
+          min=mid+1;
+
+        }
+
+        else{
+
+          max=mid-1;
+
+        }
+
+      }
+
+    }
+
+    return -1;
+
+  }
+
+}
+
+public class BinarySearchKey{
+
+  public static void main(String[] args){
+
+    Scanner sc=new Scanner(System.in);
+
+    System.out.println("Enter the Number Of Elemnts to be Store in Array");
+
+    int n=sc.nextInt();
+
+    int  arr[]=new int[n];
+
+    System.out.println("Entre the elements into array");
+
+    for(int i=0;i<n;i++){
+
+      arr[i]=sc.nextInt();
+
+    }
+
+    System.out.println("Enter key value ");
+
+    int key=sc.nextInt();
+
+    Arrays.sort(arr);
+
+    BinarySearch bi=new BinarySearch();
+
+    int check=bi.binSearch(arr,key,n);
+
+    //System.out.println(check);
+
+    if(check!=-1){
+
+      System.out.println("The key element "+key+" is found in index of "+check);
+
+    }
+
+    else{
+
+      System.out.println(key+" is not found");
+
+    }
+
+  }
+
+}
+
+[12:45 PM] Pavan Kumar Allada
+
+Write a program to find a target element in a given array using the binary search technique. The program should then check if the target element is a prime number or not and print an appropriate message.
+
+ 
+
+Here's a sample input and output for the above question:
+
+ 
+
+-------------------------------------------------------------
+
+ 
+
+Sample Input:
+
+ 
+
+A = [23,45,67,78,86,90]
+
+ 
+
+Target element is: 67
+
+ 
+
+Expected Output:
+
+ 67 is present in 2nd index position and it is a prime number
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+import java.util.Arrays;
+
+class BinarySearch{
+
+  public int binSearch(String words[],String key,int n){
+
+    int low=0,high=n-1;
+
+    while(low<=high){
+
+      int mid=(low+high)/2;
+
+      if(words[mid].equalsIgnoreCase(key)){
+
+        return mid;
+
+      }
+
+      else{
+
+        int val=key.compareTo(words[mid]);
+
+        if(val>0){
+
+          low=mid+1;
+
+        }
+
+        else{
+
+          high=mid-1;
+
+        }
+
+      }
+
+    }
+
+    return -1;
+
+  }
+
+}
+
+public class BinarySearchStringKey{
+
+  public static void main(String[] args){
+
+    Scanner sc=new Scanner(System.in);
+
+    System.out.println("Enter the String");
+
+    String str=sc.nextLine();
+
+    System.out.println("Enter key value ");
+
+    String key=sc.nextLine();
+
+    String words[]=str.split(" ");
+
+    Arrays.sort(words);
+
+    int n=words.length;
+
+    BinarySearch bi=new BinarySearch();
+
+    int result=bi.binSearch(words,key,n);
+
+    //System.out.println(check);
+
+    if(result!=-1){
+
+      System.out.println("The key element "+key+" is found in index of "+result);
+
+    }
+
+    else{
+
+      System.out.println(key+" is not found");
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class BinarySearchString{
+
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("enter the size :");
+
+    int n=sc.nextInt();
+
+    String num[]=new String[n];
+
+    System.out.println("enter the strings:");
+
+    for(int i=0;i<n;i++){
+
+      num[i]=sc.nextLine();
+
+    }
+
+    System.out.println("enter the string to be searched:");
+
+    String key=sc.nextLine();
+
+    int low=0;
+
+    int high=n-1;
+
+    Search l=new Search();
+
+    int found=l.binarySearch(num,n,key,low,high);
+
+    if(found==-1)
+
+      System.out.println("no element found");
+
+    else
+
+      System.out.println("the key element is present at the index of:"+ found);
+
+  }
+
+}
+
+ 
+
+
+
+class Search{
+
+public int binarySearch(String num[],int n,String key,int low,int high){
+
+   while(low<=high){
+
+   int mid=(low+high)/2;
+
+    int s=key.compareTo(num[mid]);
+
+
+    if(s>0)
+
+      low=mid+1;
+
+    else if(s<0) 
+
+      high=mid-1;
+
+    else if(s==0)
+
+      return mid;
+
+    }
+
+   return -1;
+
+}
+
+}
+

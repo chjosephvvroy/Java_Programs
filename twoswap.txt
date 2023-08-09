@@ -1,0 +1,12 @@
+write an algorithm to swap two numbers
+
+number1-20 number2-50
+
+step 1: start 
+step 2: declare number1, number2, temporary number
+step 3: read the values 20 and 50 into number1, number2
+step 4: allocate 20 into temporary number
+step 5: allocate 50 into number1
+step 6: allocate 20 to number2
+step 6: print swapped numbers
+step 7: stop

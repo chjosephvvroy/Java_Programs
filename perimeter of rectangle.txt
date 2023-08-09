@@ -1,0 +1,8 @@
+write the algorithm to find perimeter of rectangle
+
+step 1: start
+step 2: declare length, breadth, perimeter
+step 3: read the values into length and breadth
+step 4: calculate perimeter of rectangle using the formula perimeter<--2(length*breadth)
+step 5: print perimeter
+step 6: stop

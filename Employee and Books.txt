@@ -1,0 +1,863 @@
+gan array cab store both objects and primitive data types and arraylist can store only store objects
+
+comparable interface contains compare to() method 
+while comperator interface contains compare() method and equals() method
+
+
+add() method is from collection interface
+
+
+if we want custom sorting then we need to use comporator
+
+
+if we want ordering and duplicate elements then we should go for list 
+if we dont want ordering and dont want duplicate elements then we should go for set
+
+
+
+
+
+
+
+import java.util.*;
+
+class Employee23 implements Comparable{
+
+  String name;
+
+  int id;
+
+  double Salary;
+
+  Employee23(String name,int id,double Salary){
+
+    this.name=name;
+
+    this.id=id;
+
+    this.Salary=Salary;
+
+
+  }
+
+  public int compareTo(Object obj){
+
+    Employee23 emp=(Employee23)(obj);
+
+    return this.name.compareTo(emp.name);
+
+  }
+
+  public String toString()
+
+    {
+
+      return ("" + this.name + " " + this.id + " "+ this.Salary);
+
+    }
+
+
+
+}
+
+public class EmployeeTreeSet1{
+
+  public static void main(String[] args){
+
+
+    TreeSet<Employee23> ts=new TreeSet<>();
+
+    Employee23 emp1=new Employee23("Ravi",1,52042.3);
+
+    Employee23 emp2=new Employee23("pra",2,8962.25);
+
+    Employee23 emp3=new Employee23("prasad",3,896334.25);
+
+    ts.add(emp1);
+
+    ts.add(emp2);
+
+    ts.add(emp3);
+
+    System.out.println(ts);
+
+    System.out.println("Based on name the values printing in Ascending order");
+
+    for (Employee23 emp : ts) {
+
+ 
+
+      System.out.println(emp);
+
+
+
+    }
+
+  }
+
+}
+
+
+
+//Program Based on Salary values to display employee details
+
+import java.util.*;
+
+class Employee24 implements Comparable{
+
+  String name;
+
+  int id;
+
+  double Salary;
+
+  Employee24(String name,int id,double Salary){
+
+    this.name=name;
+
+    this.id=id;
+
+    this.Salary=Salary;
+
+
+  }
+
+  public int compareTo(Object obj){
+
+    Employee24 emp=(Employee24)obj;
+
+    if(this.Salary<emp.Salary)
+
+      return -1;
+
+    else if(this.Salary>emp.Salary)
+
+      return 1;
+
+    else
+
+      return 0;
+
+  }
+
+  public String toString()
+
+    {
+
+      return ("" + this.name + " " + this.id + " "+ this.Salary);
+
+    }
+
+
+
+}
+
+public class EmployeeTreeSetSalary{
+
+  public static void main(String[] args){
+
+
+    TreeSet<Employee24> ts=new TreeSet<>();
+
+    Employee24 emp1=new Employee24("Ravi",1,25000);
+
+    Employee24 emp2=new Employee24("Pra",2,22000);
+
+    Employee24 emp3=new Employee24("Prasad",3,40000);
+
+    ts.add(emp1);
+
+    ts.add(emp2);
+
+    ts.add(emp3);
+
+    System.out.println(ts);
+
+    System.out.println("Based on name the values printing in Ascending order");
+
+    for (Employee24 emp : ts) {
+
+ 
+
+      System.out.println(emp);
+
+
+
+    }
+
+  }
+
+}
+
+
+
+import java.util.*;
+
+
+class Books implements Comparable
+
+
+  {​​​​​
+
+
+    String name;
+
+
+    String author;
+
+
+    double price;
+
+
+  Books(String name,String author,double price)
+
+
+    {​​​​​
+
+
+    this.name=name;
+
+
+    this.author=author;
+
+
+      this.price=price;
+
+
+    }​​​​​
+
+
+public int compareTo(Object obj)
+
+
+    {​​​​​
+
+
+      Books bo=(Books)obj;
+
+
+
+      if(this.price>bo.price)
+
+
+      return 1;
+
+
+    else if(this.price<bo.price)
+
+
+      return -1;
+
+
+    else
+
+
+      return 0;
+
+
+    }​​​​​
+
+
+    public String toString()
+
+
+    {​​​​​
+
+
+      return "["+"name:" +name +"author:"+author+"price:"+price+"]";
+
+
+    }​​​​​
+
+
+
+  }​​​​​
+
+
+class Book
+
+
+  {​​​​​
+
+
+    public static void main(String[] args)
+
+
+    {​​​​​
+
+
+      Books b1=new Books("social","muttai",678);
+
+
+       Books b2=new Books("Hindi","nannai",34);
+
+
+       Books b3=new Books("TELUGU","HANNAI",12);
+ 
+       TreeSet obj=new TreeSet();
+
+
+      obj.add(b1);
+
+
+       obj.add(b2); 
+
+
+       obj.add(b3);
+ 
+      for(Object o:obj)
+
+
+        {​​​​​
+
+
+          System.out.println(o);
+
+
+        }​​​​​
+
+
+    }​​​​​
+
+
+  }​​​​​
+
+
+
+
+
+import java.util.*;
+
+class Employee2 implements Comparable
+
+  {
+
+    int eno;
+
+    String ename;
+
+    double esalary;
+
+    String eaddre;
+
+    public Employee2(int eno,String ename,double esalary,String eaddre)
+
+    {
+
+      this.eno=eno;
+
+      this.ename=ename;
+
+      this.esalary=esalary;
+
+      this.eaddre=eaddre;
+
+    }
+
+    public int getEno() {
+
+        return eno;
+
+    }
+
+    public void setEno(int eno) {
+
+        this.eno = eno;
+
+    }
+
+    public String getEname() {
+
+        return ename;
+
+    }
+
+    public void setEname(String ename) {
+
+        this.ename = ename;
+
+    }
+
+    public double getEsalary() {
+
+        return esalary;
+
+    }
+
+    public void setEsalary(double esalary) {
+
+        this.esalary = esalary;
+
+    }
+
+    public String getEaddre() {
+
+        return eaddre;
+
+    }
+
+    public void setEaddre(String eaddre) {
+
+        this.eaddre = eaddre;
+
+    }
+
+    public int compareTo(Object obj)
+
+    {
+
+      Employee2 emp=(Employee2)obj;
+
+      return this.ename.compareTo(emp.ename);
+
+    }
+
+public String toString()
+
+    {
+
+   return (" "+ this.eno+""+ this.ename+""+ this.esalary+""+ this.eaddre);
+
+    }
+
+  }
+
+class Test8
+
+  {
+
+    public static void main(String []args)
+
+    {
+
+      TreeSet<Employee2> ts=new TreeSet<>();
+
+        Employee2 emp1=new Employee2(11,"mounika",30.0000,"ong");
+
+      Employee2 emp2=new Employee2(12,"puri",40.0000,"hyd");
+
+      Employee2 emp3=new Employee2(13,"sadhvi",20.0000,"adk");
+
+      Employee2 emp4=new Employee2(14,"chanadna",25.0000,"kdk");
+
+      ts.add(emp1);
+
+      ts.add(emp2);
+
+      ts.add(emp3);
+
+      ts.add(emp4);
+
+      System.out.println(ts);
+
+      for(Employee2 emp:ts)
+
+        {
+
+        System.out.println(emp);
+
+        }
+
+    }
+
+  }
+
+[11:58 AM] G N D PRASAD (Guest)
+
+import java.util.*;
+
+class Employee_8 implements Comparable{
+
+  String name;
+
+  int id;
+
+  double salary;
+
+  public Employee_8(String name,int id,double salary){
+
+    this.name=name;
+
+    this.id=id;
+
+    this.salary=salary;
+
+  }
+
+  public String toString(){
+
+    return this.name+" "+this.id+" "+this.salary;
+
+  }
+
+  public int compareTo(Object obj){
+
+    Employee_8 emp=(Employee_8)obj;
+
+    if(this.salary<emp.salary){
+
+      return -1;
+
+    }
+
+    else if(this.salary>emp.salary){
+
+      return +1;
+
+    }
+
+    else{
+
+      return 0;
+
+    }
+
+  }
+
+}
+
+ 
+
+public class EmployeeTreeSort2{
+
+  public static void main(String[] args){
+
+    TreeSet<Employee_8> ts=new TreeSet<Employee_8>();
+
+    Employee_8 emp1=new Employee_8("Gana",232,50000);
+
+    Employee_8 emp2=new Employee_8("Ravi",225,55000);
+
+    Employee_8 emp3=new Employee_8("Nikhil",220,25000);
+
+    ts.add(emp1);
+
+    ts.add(emp2);
+
+    ts.add(emp3);
+
+    System.out.println(ts);
+
+    /*for(Object obj:ts){
+
+      Employee_6 emp=(Employee_6)obj;
+
+      System.out.println(emp);
+
+    }*/
+
+    for(Employee_8 emp:ts){
+
+      System.out.println(emp);
+
+    }
+
+  }
+
+}
+
+[11:58 AM] NIKHIL KUMAR N (Guest)
+
+import java.util.*;
+
+class Employee implements Comparable
+
+  {
+
+    String name;
+
+    int id;
+
+    double salary;
+
+    public Employee(String name,int id,double salary)
+
+    {
+
+      this.name=name;
+
+      this.id=id;
+
+      this.salary=salary;
+
+    }
+
+    public String getName() {
+
+        return name;
+
+    }
+
+    public void setName(String name) {
+
+        this.name = name;
+
+    }
+
+    public int getId() {
+
+        return id;
+
+    }
+
+    public void setId(int id) {
+
+        this.id = id;
+
+    }
+
+    public double getSalary() {
+
+        return salary;
+
+    }
+
+    public void setSalary(double salary) {
+
+        this.salary = salary;
+
+    }
+
+public int compareTo(Object obj)
+
+    {
+
+      Employee emp=(Employee)obj;
+
+      if(this.id<emp.id)
+
+
+        return -id;
+
+   else if(this.id>emp.id)
+
+      return id;
+
+    else
+
+      return 0;
+
+
+    }
+
+    public String toString()
+
+    {
+
+      return name+" "+id+" "+salary;
+
+    }
+
+
+  }
+
+public class Program2
+
+  {
+
+    public static void main(String[] args)
+
+    {
+
+      TreeSet t = new TreeSet();
+
+      Employee emp1 = new Employee("nikhil",12,1000);
+
+       Employee emp2= new Employee("nayak",11,1000);
+
+       Employee emp3 = new Employee("nithin",122,1000);
+
+      t.add(emp1);
+
+      t.add(emp2);
+
+      t.add(emp3);
+
+       System.out.println(t);
+
+
+
+    }
+
+  }
+
+
+
+
+[12:04 PM] Pavan Kumar Allada
+
+// Importing util package
+
+import java.util.*;
+
+ 
+
+// Custome class Car implements Comparable interface
+
+class Car implements Comparable<Car> {
+
+ 
+
+    // attributes
+
+    private int Modelno;
+
+    private String name, city;
+
+    private int stock;
+
+ 
+
+    // Car constructor
+
+    public Car(int Modelno, String name, String city,
+
+            int stock)
+
+    {
+
+        this.Modelno = Modelno;
+
+        this.name = name;
+
+        this.city = city;
+
+        this.stock = stock;
+
+    }
+
+ 
+
+    public int getModelno() {
+
+        return Modelno;
+
+    }
+
+ 
+
+    public void setModelno(int modelno) {
+
+        Modelno = modelno;
+
+    }
+
+ 
+
+    public String getName() {
+
+        return name;
+
+    }
+
+ 
+
+    public void setName(String name) {
+
+        this.name = name;
+
+    }
+
+ 
+
+    public String getCity() {
+
+        return city;
+
+    }
+
+ 
+
+    public void setCity(String city) {
+
+        this.city = city;
+
+    }
+
+ 
+
+    public int getStock() {
+
+        return stock;
+
+    }
+
+ 
+
+    public void setStock(int stock) {
+
+        this.stock = stock;
+
+    }
+
+ 
+
+    // Override the compareTo() method
+
+    public int compareTo(Car c)
+
+    {
+
+        return name.compareTo(c.name);
+
+    }
+
+}
+
+ 
+
+public class Test4{
+
+    // Main driver method
+
+    public static void main(String[] args)
+
+    {
+
+ 
+
+        // Define an objects of TreeSet class
+
+        TreeSet<Car> set = new TreeSet<Car>();
+
+
+        // Creating Car objects
+
+        Car c1 = new Car(132, "BMW", "Rajkot", 35);
+
+        Car c2 = new Car(269, "Audi", "Surat", 20);
+
+        Car c3 = new Car(560, "Kia", "Vadodara", 15);
+
+        Car c4 = new Car(109, "Creta", "Ahmedabad", 26);
+
+ 
+
+        // Adding Car objects to TreeSet
+
+        set.add(c1);
+
+        set.add(c2);
+
+        set.add(c3);
+
+        set.add(c4);
+
+ 
+
+        // Traversing TreeSet
+
+        for (Car c : set) {
+
+            System.out.println(c.getName() + " " + c.getStock() + " "
+
+                            + c.getCity() + " " + c.getModelno());
+
+        }
+
+
+    //System.out.println(set);
+
+    }
+
+}

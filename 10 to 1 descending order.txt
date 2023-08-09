@@ -1,0 +1,23 @@
+write an algorithm for printing 10 to 1 in descending order
+
+output
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+
+step 1: start 
+step 2: declare count
+step 3: assign value 10 into count
+step 4: print count=10
+step 5: decrement count by one(count=count-1)
+step 6: repeat the steps 4 and 5 until it reaches 
+count values (count>=1) or (count>0)
+step 7: stop

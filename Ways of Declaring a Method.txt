@@ -1,0 +1,111 @@
+
+we can write a method in four ways
+ 
+1. method without return type without arguments
+2. method without return type with arguments
+3. method with returntype without arguments
+4. method with returntype with arguments
+
+
+
+
+
+//without return type without arguments
+
+import java.util.*;
+public class Main
+{
+    public static void addition()
+    {
+        int a=10,b=20;
+        int sum=a+b;
+        System.out.println("result "+sum);
+          
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+         addition();
+  
+    
+    }
+}
+
+
+
+
+//without return type with arguments
+
+import java.util.*;
+public class Main
+{
+    public static void addition(int a,int b)
+    {
+        int sum=a+b;
+        System.out.println("result "+sum);
+          
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter x value");
+        int x=sc.nextInt();
+        System.out.println("enter y values");
+        int y=sc.nextInt();
+        addition(x,y);
+  
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+//with return type without arguments
+
+import java.util.*;
+public class Main
+{
+    public static int addition()
+    {
+        int a=10,b=20;
+        int sum=a+b;
+        return sum;
+          
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+         int result=addition();
+        System.out.println(result);
+    
+    }
+}
+
+
+
+
+//with return type with arguments
+import java.util.*;
+public static int(int a, int b)
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

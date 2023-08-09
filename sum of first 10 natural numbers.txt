@@ -1,0 +1,10 @@
+find sum of first 10 natural numbers
+
+step1: start
+step2: declare count, sum
+step3: assigning the value 1 into count and assign value 0 to sum
+step4: adding count value to sum and store that result into sum (sum-->count+1)
+step5: increment count value by 1(count-->count+1) 
+step6: repeat the step 4 and 5 until it reaches the count value lessthan or equal to 10 (count<=10) otherwise go to step7
+step7: print sum
+step8: stop

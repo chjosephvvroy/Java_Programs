@@ -1,0 +1,71 @@
+collections is used to temporarily store data
+database is used to store data permenantly
+
+file system has several disadvantages they are
+security
+data redundancy(duplication)
+data isolation
+data dependence(application programs are not independent)
+applications are dependent on how the data is stored and how the data is accessed 
+concurrent access anamolies(simultaneous accessing of data i.e if more than one user tries to access the data several problems may arise)
+
+
+what is database?
+database: organized collection of interrelated data
+
+what is database management system?
+set of programs or system used to manage the data(retrieve, enter the data etc..)
+
+MySQL is open source and free
+
+what is relational database management system?
+In RDBMS data is stored in a table
+
+what is SQL
+SQL stands for Structured Query Language
+interact with databases
+
+what are SQL commands
+Data Definition Language(DDL) commands-create alter, drop,truncate
+Data Manipulation(DML) Commands-insert,update,delete select
+Data Control Language(DCL) Commands(DCL)-grant, revoke
+Transaction Control Language(TCL) Commands-commit, Rollback, savepoint
+SQL vs MySQL
+
+SQL: language used to interact with databases
+MySQL: it is RDBMS software manages the data using SQL MySQL is RDBMS 
+
+
+CREATE TABLE <table_name>
+
+(
+
+<attribute1> <data-type1>  [contraint1],
+
+           <attribute2> <data-type2>  [contraint2],
+
+           <attribute3> <data-type3>  [contraint3],
+
+         ……………………………………….
+
+           ………………………………………..
+
+           <attributen> <data-typen>  [constraint n],
+
+[table contraint1],
+
+           …………………………………………..
+
+           …………………………………………..
+
+           [table constraint n]
+
+);
+
+has context menu
+Compose
+
+
+difference between drop and truncate command 
+truncate deletes the data in the table but doesnt delete the table
+drop deletes entire table and the data in the table

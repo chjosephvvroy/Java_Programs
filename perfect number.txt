@@ -1,0 +1,20 @@
+perfect number
+
+step 1: start
+step 2: declare num, sum, count
+step 3: initialize sum=0, count=1
+step 4: check the condition (num%count==0) if it is true go to step 5 or goto step6
+step 5: sum=sum+count
+step 6: count=count+1 
+step 7: repeat 4-6 count<num if its true repeat the steps or go to step 8
+step 8: compare the value num with sum if it is true goto step 9 or goto step 10
+step 9: print num is perfect number
+step 10: print num is not perfect number
+step 11: stop
+
+
+
+
+
+psuedocode is the way of writing a program
+

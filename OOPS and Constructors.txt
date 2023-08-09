@@ -1,0 +1,205 @@
+static means attributes belongs to a class while non static means the attributes belongs to the object.
+
+inheritance is applied when there is IS A RELATIONSHIP between the classes.
+
+subclass can be referenced by superclass(object a=new object b()) 
+but superclass cannot be referenced by subclass(object b=new object a()) 
+but its done by narrowing type casting Dog b=(Dog)new animal
+
+
+
+
+ØThe inherited fields can be used directly, just like any other fields.
+
+ 
+
+ØWe can declare new fields in the subclass that are not in the superclass.
+
+ 
+
+ØThe inherited methods can be used directly as they are.
+
+ 
+
+ØWe can write a new instance method in the subclass that has the same signature as the one in the superclass, thus overriding it .
+
+ 
+
+ØWe can declare new methods in the subclass that are not in the superclass.
+
+ 
+
+ØWe can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super
+
+
+
+
+//program to illustrate super() constructor
+
+ 
+
+class Employee
+{
+   String eid;
+   String ename;
+   String eaddr;
+  Employee(String eid1, String ename1, String eaddr1)
+   {
+       eid = eid1;
+       ename = ename1;
+       ename = eaddr1;
+   }
+   public void getEmpDetails() 
+   {
+       System.out.println("Employee Id :"+eid);
+       System.out.println("Employee name :"+ename);
+       System.out.println("Employee Address :"+eaddr);
+   }
+}
+
+ 
+
+class Manager extends Employee 
+{
+  int managerid; 
+  Manager(String eid1, String ename1, String eaddr1,int id)
+   {
+     super(eid1,ename1,eaddr1); 
+     //calling the super class constructor
+       managerid=id;  
+
+   }
+   public void getManagerDetails()
+    {
+        System.out.println("manager Details");
+        System.out.println("-----------------");
+        getEmpDetails();
+         System.out.println("managerid:"+ managerid);
+    }
+}
+
+ 
+
+class Accountant extends Employee
+{
+   Accountant(String eid1, String ename1, String eaddr1)
+   {
+       super(eid1,ename1,eaddr1);
+     //super();
+   }
+   public void getAccountantDetails()
+   {
+        System.out.println("Accountant Details");
+        System.out.println("--------------------");
+        getEmpDetails();
+   }
+}
+
+ 
+
+
+class Inheritancesuper 
+{
+      public static void main(String[] args)
+      {
+          Manager m = new Manager("E-111","AAA","Hyd",3);
+          m.getManagerDetails();
+          System.out.println();
+          Accountant acc = new Accountant ("E-222","BBB","Hyd");
+          acc.getAccountantDetails();
+}
+}
+
+
+
+
+
+//program to illustrate super() constructor
+
+ 
+
+class Employee {
+  String eid; // instance variables
+  String ename;
+  String eaddr;
+
+ 
+
+  Employee() 
+  {
+    System.out.println("superclass constructor");
+  }
+
+ 
+
+  public void getEmpDetails() // instance method
+  {
+    System.out.println("Employee Id :" + eid);
+    System.out.println("Employee name :" + ename);
+    System.out.println("Employee Address :" + eaddr);
+  }
+}
+
+ 
+
+class Manager extends Employee {
+  int managerid;
+
+ 
+
+  Manager(String eid1, String ename1, String eaddr1, int id) {
+
+    // calling the super class constructor
+    managerid = id;
+    //super(eid1, ename1, eaddr1);
+    eid=eid1;
+    ename=ename1;
+    eaddr=eaddr1;
+
+ 
+
+  }
+
+ 
+
+  public void getManagerDetails() { 
+    System.out.println("manager Details");
+    System.out.println("-----------------");
+    getEmpDetails();
+    System.out.println("managerid:" + managerid);
+  }
+}
+
+ 
+
+class Accountant extends Employee {
+  Accountant(String eid1, String ename1, String eaddr1) {
+   // super(eid1, ename1, eaddr1);
+    // super();
+  }
+
+ 
+
+  public void getAccountantDetails() {
+    System.out.println("Accountant Details");
+    System.out.println("--------------------");
+    getEmpDetails();
+  }
+}
+
+ 
+
+class Inheritancesuper {
+  public static void main(String[] args) {
+    Manager m = new Manager("E-111", "AAA", "Hyd", 3);
+    m.getManagerDetails();
+    System.out.println();
+   // Accountant acc = new Accountant("E-222", "BBB", "Hyd");
+   // acc.getAccountantDetails();
+  }
+}
+
+
+
+
+

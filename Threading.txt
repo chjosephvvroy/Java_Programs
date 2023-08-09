@@ -1,0 +1,192 @@
+
+
+ØThe process of executing multiple threads simultaneously is known as multithreading. It enables maximum utilization of the CPU.
+
+ 
+
+Ø A thread is a control/flow/path of execution that exists within a single process
+
+ 
+
+ØA thread is a light-weight smallest part of a process that can run concurrently with the other parts(other threads) of the same process.
+
+ 
+
+Threads are independent because they all have separate path of execution and share common memory.
+
+
+
+Application Areas:
+
+ 
+
+ØThreads are mainly used in server side programs to serve the needs of multiple clients over the network or internet.
+
+ 
+
+Threads are also used in the creation of games and animations
+
+
+
+
+//program to demonstrate thread properties
+class Ex4 {
+  public static void main(String[] args) {
+    Thread th = Thread.currentThread();
+    System.out.println("Name of the current thread =" + th.getName());
+    th.setName("Java");
+    System.out.println("Name of the current thread =" + th.getName());
+    System.out.println("is alive: " + th.isAlive());
+    Thread t1 = new Thread("bitlabs");
+    System.out.println("Name of the child thread = " + t1.getName());
+    System.out.println("is alive: " + t1.isAlive());
+    t1.start();
+    t1.setPriority(3);
+    System.out.println("after start() method ,is alive: " + t1.isAlive() + "its priority is " + t1.getPriority());
+    System.out.println("Max Priority = " + Thread.MAX_PRIORITY);
+    System.out.println("Min Priority = " + Thread.MIN_PRIORITY);
+    System.out.println("Normal Priority = " + Thread.NORM_PRIORITY);
+  }
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+//program to illustrate sleep() method
+
+ 
+
+class MyRunnable implements Runnable {
+
+  public void run() {
+
+    System.out.println("inside run method");
+
+    go();
+
+  }
+
+ 
+
+  public void go() {
+
+    try {
+
+      Thread.sleep(2000); // 2000 milliseconds or 2 seconds
+
+    } catch (InterruptedException ex) {
+
+      ex.printStackTrace();
+
+    }
+
+ 
+
+    doMore();
+
+  }
+
+ 
+
+  public void doMore() {
+
+    System.out.println("top of the stack");
+
+  }
+
+}
+
+ 
+
+public class Ex5 {
+
+  public static void main(String[] args) {
+
+    MyRunnable theJob = new MyRunnable();
+
+    Thread t = new Thread(theJob);
+
+    t.start();
+
+    for (int i = 0; i < 10; i++)
+
+      System.out.println("main method");
+
+  }
+
+}
+
+
+
+
+
+//program to demonstrate join() method
+import java.util.Arrays;
+
+ 
+
+class MyThread extends Thread {
+  int[] a;
+
+ 
+
+  MyThread(int[] ar) {
+    a = ar;
+    start();
+  }
+
+ 
+
+  public void run() {
+    Arrays.sort(a);
+    System.out.println("Child completed sorting.");
+  }
+}
+
+ 
+
+public class Ex6 {
+  public static void main(String args[]) throws Exception {
+    int b[] = { 2, 6, 4, 0, 1, 5, 3 };
+    MyThread t = new MyThread(b);
+    t.join(); // wait for t to terminate//
+    System.out.println("Main printing array elements are :");
+    for (int i = 0; i < b.length; i++)
+      System.out.print(b[i] + " ");
+  }
+}
+
+ 
+
+
+//main thread
+//new thread---job of new thread is sorting the array
+//job of main thread is printing the sorted array
+
+ 
+
+
+//program where I need to create two threads.
+//In this program, I need to sort an array and I need to print the sorted array elements.
+
+ 
+
+//single program, I have two subtasks--sorting an array and printing the sorted array elements--
+//Thread1---job is sorting an array---newly created thread
+//Thread2---job is printing the sorted array elements--main thread
+
+ 
+
+//after Thread1 finishes the task, then only Thread2 can finish its task
+
+ 
+
+//Thread2 need to wait until thread1 finishes its task. This can be done using join() method.

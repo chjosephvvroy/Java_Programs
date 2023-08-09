@@ -1,0 +1,8 @@
+step 1: start 
+step 2: insert ATM card into the machine by slot given
+step 3: choose language of choice 
+step 5: enter the Pin
+step 5: select deposit or withdrawl
+step 6: enter required amount
+step 7: Take back the card
+step 8: stop 

@@ -1,0 +1,467 @@
+types of packsges
+1.predefined packages
+2.user defines packages
+
+ 
+
+Syntax:
+package package name
+class A
+{
+}
+
+ 
+
+compiling:
+javac -d . classname.java
+
+ 
+
+import packagename.classname
+
+
+
+1.private-with in the class
+2.default-within the package
+3.protected-with packsge and outside package with in the child class only
+4.publoic it can access anywhere.
+
+ 
+
+
+Exception Handling
+it is an unexpected event that occur on execution program called as Exception Handling.
+Exceptions are exceptional/unusual/abnormal events that occur during the execution of programs that disrupts the normal flow of instructions
+and we need to handle the exception other wise it may cross operating system abnormally
+
+ 
+
+
+Exception Handking keywords
+1.try-it is used in exception statements
+2.catch-to reduce the code exception
+throw
+throws
+finally-The code in final block is written optional it is used to close the connections.
+
+Last read
+Exception = Exceptions are exceptional handling
+
+Exception = Exceptions are exceptional/unusual/abnormal events that occur during the execution of programs that disrupts the normal flow of instructions
+keywords are used to deal with exception handling
+1.try
+2.catch
+3.throw
+4.throws
+5.finally
+1.try=a block of code in which exception occurs
+2.catch=it is used to handle the exception by dealing the type of exception within the parameter.
+  first try block is used then catch block is used
+  no of catch blocks can be used within try block
+  order of catch block does matter
+=finally block is optional to, used to close the connection.
+
+
+
+
+
+ØChecked Exception is an exception recognized at compilation time, but, not occurred at compilation time
+
+ 
+
+ØChecked exceptions are those that must be caught or declared to be thrown.
+
+Ø
+
+ØChecked exceptions should be handled in the code to avoid compile time errors.
+
+ 
+
+Java considers Throwable and any of its subclass that is not also a subclass of either RuntimeException or Error as checked exception
+
+
+
+
+
+
+
+//program to illustrate ArithmeticException-division by zero
+
+ 
+
+import java.util.InputMismatchException;
+
+import java.util.Scanner;
+
+ 
+
+public class Test1 {
+
+ 
+
+  public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+
+    try {
+
+      int num1, num2;
+
+ 
+
+      System.out.print("Enter first number(dividend): ");
+
+      num1 = scan.nextInt();
+
+ 
+
+      System.out.print("Enter second number(divisor): ");
+
+      num2 = scan.nextInt();
+
+ 
+
+      int div = num1 / num2;
+
+      System.out.println("Quotient: " + div);
+
+    } catch (ArithmeticException e) {
+
+      System.out.println("arithmetic exception occured");
+
+      System.out.println(e.getMessage());
+
+      e.printStackTrace();
+
+    } catch (InputMismatchException e) {
+
+      System.out.println("Input mismatch exception occured");
+
+      System.out.println(e.getMessage());
+
+      e.printStackTrace();
+
+    } finally {
+
+      System.out.println("program in finally block");
+
+ 
+
+    }
+
+ 
+
+  }
+
+}
+
+ 
+
+/*
+
+* If the value of num2 is zero, an exception occurs during the division
+
+* operation.
+
+* The JVM creates an object representing the exception and throws the object
+
+* which essentially disrupts the normal control of execution and places it just
+
+* after the try block.
+
+* The JVM then looks for an appropriate catch blockthat can hold the object
+
+* thrown.
+
+* 
+
+* Note that if JVM does not find any suitable catch block, it forwards
+
+* the exception to a default handler which prints exception description and
+
+* stack trace and terminates the program without executing any further
+
+* instruction.
+
+* 
+
+* If this program is executed, it terminates abruptly
+
+*/
+
+
+
+
+Recap of morninng session
+Exception Hirachy
+
+types  of exception
+ 
+a.checked exception: it is recognised at the compile time but they occour at runtime and shold be handled in the code otherwise it will give  compile time error.
+      1.Checked Exception is an exception recognized at compilation time but are occured in runtie
+      2.Checked exceptions are those that must be caught or declared to be thrown.
+      3.Checked exceptions should be handled in the code to avoid compile time errors.
+      4.Java considers Throwable and any of its subclass that is not also a subclass of either RuntimeException or Error as checked exceptions
+
+ 
+
+b.unchecked exception
+   ruuning time it will occur and recognised at compile time
+
+ 
+
+errors
+the unexpected error that is occured outside the application we cant do anything .
+
+
+
+
+
+
+import java.util.Scanner;
+class InsufficientFundsException extends Exception{
+  InsufficientFundsException(String msg){
+    super(msg);
+  }
+}
+class WithdrawClass{
+  double balance =10000;
+  public void withdraw(double amount){
+    try{
+    if(balance<amount)
+      throw new InsufficientFundsException("amount is greater than the balance");
+      else{
+        System.out.println("Withdrawn successfully");
+        System.out.println("Balance amount is "+(balance - amount));
+      }
+    }
+    catch(InsufficientFundsException e){
+      System.out.println("Exception caught :"+e.getMessage());
+    }
+  }
+}
+public class ExceptionExample2{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    WithdrawClass wc = new WithdrawClass();
+    System.out.println("enter amount :");
+    double amount = sc.nextDouble();
+    wc.withdraw(amount);
+  }
+}
+
+
+
+
+
+
+public class Library {
+
+  private Book[] books;
+
+  private int numBooks;
+
+ 
+
+  public Library(int capacity) {
+
+    books = new Book[capacity];
+
+    numBooks = 0;
+
+  }
+
+ 
+
+  public void addBook(Book book) {
+
+    if (numBooks < books.length) {
+
+      books[numBooks] = book;
+
+      numBooks++;
+
+      System.out.println("Book added successfully.");
+
+    } else {
+
+      System.out.println("The library is full. Cannot add more books.");
+
+    }
+
+  }
+
+ 
+
+  public void deleteBook(String isbn) {
+
+    int bookIndex = findBookIndex(isbn);
+
+ 
+
+    if (bookIndex != -1) {
+
+      // Shift the elements to remove the book
+
+      for (int i = bookIndex; i < numBooks - 1; i++) {
+
+        books[i] = books[i + 1];
+
+      }
+
+ 
+
+      books[numBooks - 1] = null; // Set last element to null
+
+      numBooks--;
+
+ 
+
+      System.out.println("Book deleted successfully.");
+
+    } else {
+
+      System.out.println("Book not found in the library.");
+
+    }
+
+  }
+
+ 
+
+  private int findBookIndex(String isbn) {
+
+    for (int i = 0; i < numBooks; i++) {
+
+      if (books[i].getIsbn().equals(isbn)) {
+
+        return i;
+
+      }
+
+    }
+
+    return -1; // Book not found
+
+  }
+
+ 
+
+  public void displayBooks() {
+
+    if (numBooks == 0) {
+
+      System.out.println("The library is empty.");
+
+    } else {
+
+      System.out.println("Books in the library:");
+
+      for (int i = 0; i < numBooks; i++) {
+
+        System.out.println(books[i]);
+
+      }
+
+    }
+
+  }
+
+ 
+
+  public static void main(String[] args) {
+
+    Library library = new Library(5);
+
+ 
+
+    // Creating book objects
+
+    Book book1 = new Book("1234567890", "The Catcher in the Rye", "J.D. Salinger");
+
+    Book book2 = new Book("0987654321", "To Kill a Mockingbird", "Harper Lee");
+
+    Book book3 = new Book("5432167890", "1984", "George Orwell");
+
+ 
+
+    // Adding books to the library
+
+    library.addBook(book1);
+
+    library.addBook(book2);
+
+    library.addBook(book3);
+
+ 
+
+    // Displaying books in the library
+
+    library.displayBooks();
+
+ 
+
+    // Deleting a book from the library
+
+    library.deleteBook("0987654321");
+
+ 
+
+    // Displaying books after deletion
+
+    library.displayBooks();
+
+  }
+
+}
+
+ 
+
+class Book {
+
+  private String isbn;
+
+  private String title;
+
+  private String author;
+
+ 
+
+  public Book(String isbn, String title, String author) {
+
+    this.isbn = isbn;
+
+    this.title = title;
+
+    this.author = author;
+
+  }
+
+ 
+
+  public String getIsbn() {
+
+    return isbn;
+
+  }
+
+ 
+
+  @Override
+
+  public String toString() {
+
+    return "Book{" +
+
+        "isbn='" + isbn + '\'' +
+
+        ", title='" + title + '\'' +
+
+        ", author='" + author + '\'' +
+
+        '}';
+
+  }
+
+}
+

@@ -1,0 +1,27 @@
+constructor overloading, 
+types of constructors: no arg constructor,parametrized constructor, default constructor, working and application of this keyword
+
+
+If you apply static keyword with any method, it is known as static method.
+ØA static method belongs to the class rather than the object of a class.
+ØA static method can be invoked without the need for creating an instance of a class.
+ØA static method can access static data member and can change the value of it.
+ØStatic method accessed directly in static and non-static method
+There are two main restrictions for the static method. They are:
+ØThe static method can not use non static data member or call non-static method directly.
+Øthis and super cannot be used in static context.
+
+
+
+method overloading is an example of polymorhism. polymorphism is used to implement inheritance
+
+
+inheritance: new classes can have the properties of parent class
+polymorhism: existing of class in more than one form.method overloading is an example of polymorhism. polymorhism is used to implement inheritance
+encapsulation: used to secure data within the class
+abstraction: displying wanted data and hiding unwanted data
+
+
+
+
+static keyword is used for memory management

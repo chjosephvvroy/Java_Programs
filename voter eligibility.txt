@@ -1,0 +1,24 @@
+write an algorithm to find voter eligibility
+
+step 1: start 
+step 2: declare age, eligible
+step 3: read the values into age
+step 4: if the age is greater than 18
+        print the voter is eligible 
+        else 
+        print voter is eligible
+step 5: stop 
+
+
+
+Psuedocode for voter eligibility
+
+step 1: begin
+step 2: declare age, eligible
+step 3: assign age=18
+step 4: if candidate age>=18
+         print"the candidate is eligible to vote"
+         else
+         print "the candidate is not eligible to vote" 
+step 5: stop
+
